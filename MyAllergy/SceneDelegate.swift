@@ -10,6 +10,21 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIapplicationLaunchOptionsKey: Any]?) -> Bool {
+//
+//        window = UIWindow()
+//        window?.makeKeyAndVisible()
+//
+//        let randomViewController = UIViewController()
+//        randomViewController.view.backgroundColor = .purple
+//
+//        let swipingController = SwipingController
+//        window?.rootViewController = randomViewController
+//
+//
+//        return true
+//    }
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

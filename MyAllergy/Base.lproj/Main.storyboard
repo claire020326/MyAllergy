@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gtm-GT-YWt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MyAllergy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAllergy" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-9l-Mqm">
-                                <rect key="frame" x="20" y="151.5" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="172.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de2-4t-Sor">
-                                <rect key="frame" x="20" y="326.5" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="355" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -35,112 +35,116 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms (Good, Ok, or Bad)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-yb-aaJ" userLabel="Symptoms">
-                                <rect key="frame" x="20" y="666.5" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="643.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please list all the ingrdients in the foods you ate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-0j-nLh">
-                                <rect key="frame" x="20" y="67.5" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please list ALL the ingrdients in the foods you ate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-0j-nLh">
+                                <rect key="frame" x="20" y="99" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in one day separated by commas. i.e. if you had" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-LD-Vmf">
-                                <rect key="frame" x="20" y="88.5" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in one day separated by commas. Don't add " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-LD-Vmf">
+                                <rect key="frame" x="20" y="120" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pizza, list: &quot;pepperoni, cheese, tomato sauce pizza&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-Go-rXu">
-                                <rect key="frame" x="20" y="109.5" width="374" height="21"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't add periods or commas at the end!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qny-5O-hZh">
-                                <rect key="frame" x="20" y="130.5" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="periods or commas at the end!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qny-5O-hZh">
+                                <rect key="frame" x="20" y="141" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Food Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9f-hO-hBj">
-                                <rect key="frame" x="100" y="24" width="214" height="63.5"/>
+                                <rect key="frame" x="100" y="44" width="214" height="63.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-ED-b2c">
-                                <rect key="frame" x="20" y="178.5" width="374" height="653.5"/>
+                                <rect key="frame" x="20" y="198.5" width="374" height="573.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1GE-A2-ADe" userLabel="breakfast text box">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="133.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. milk, cereal, scrambled eggs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1GE-A2-ADe" userLabel="breakfast text box">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="113.5"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-xc-q1j" userLabel="lunch text box">
-                                        <rect key="frame" x="0.0" y="173.5" width="374" height="133.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. pepperoni cheese pizza, lettuce, tomato" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-xc-q1j" userLabel="lunch text box">
+                                        <rect key="frame" x="0.0" y="153.5" width="374" height="113.5"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-oC-Ocf" userLabel="dinner text box">
-                                        <rect key="frame" x="0.0" y="347" width="374" height="133"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. mashed potato, gravy, steak, green beans" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-oC-Ocf" userLabel="dinner text box">
+                                        <rect key="frame" x="0.0" y="307" width="374" height="113"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09y-L5-XcU" userLabel="symptom condition text box">
-                                        <rect key="frame" x="0.0" y="520" width="374" height="133.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. Good" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09y-L5-XcU" userLabel="symptom condition text box">
+                                        <rect key="frame" x="0.0" y="460" width="374" height="113.5"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZg-BC-imz">
+                                <rect key="frame" x="290" y="767" width="100" height="66"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjj-C6-XsZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.88130454413306492" green="0.93941052736213226" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="9nd-Go-rXu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0qv-CN-2k9"/>
                             <constraint firstItem="R9f-hO-hBj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="19a-jN-Jfa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="de2-4t-Sor" secondAttribute="trailing" id="2LM-I6-Dj7"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2pK-QF-fIx"/>
+                            <constraint firstItem="Thd-LD-Vmf" firstAttribute="top" secondItem="4Sh-0j-nLh" secondAttribute="bottom" id="2zK-e6-cTx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZg-BC-imz" secondAttribute="trailing" constant="24" id="58M-qY-7vV"/>
                             <constraint firstItem="R9f-hO-hBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AqA-dD-hKd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSa-ED-b2c" secondAttribute="trailing" constant="20" id="B4r-mF-h7K"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CPv-U5-0nP"/>
-                            <constraint firstItem="hsU-9l-Mqm" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="64" id="Cfb-mV-ZYs"/>
+                            <constraint firstItem="hsU-9l-Mqm" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="65" id="Cfb-mV-ZYs"/>
                             <constraint firstItem="Thd-LD-Vmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6L-9W-dte"/>
+                            <constraint firstItem="Qny-5O-hZh" firstAttribute="top" secondItem="Thd-LD-Vmf" secondAttribute="bottom" id="FFW-M8-4pM"/>
+                            <constraint firstItem="de2-4t-Sor" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="355" id="GSe-xU-3N1"/>
+                            <constraint firstItem="4Sh-0j-nLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="I8O-5c-BWC"/>
                             <constraint firstItem="4Sh-0j-nLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iha-V1-hW9"/>
-                            <constraint firstItem="9nd-Go-rXu" firstAttribute="top" secondItem="Thd-LD-Vmf" secondAttribute="bottom" id="K2b-Zh-ZVh"/>
-                            <constraint firstAttribute="trailing" secondItem="9nd-Go-rXu" secondAttribute="trailing" constant="20" id="PUk-gN-At0"/>
                             <constraint firstItem="Thd-LD-Vmf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SeM-Qf-bXf"/>
-                            <constraint firstAttribute="bottom" secondItem="de2-4t-Sor" secondAttribute="bottom" constant="540" id="Vx6-Fj-BlQ"/>
-                            <constraint firstAttribute="bottom" secondItem="rRL-yb-aaJ" secondAttribute="bottom" constant="200" id="Y2s-tq-Mdh"/>
-                            <constraint firstItem="4Sh-0j-nLh" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="-20" id="YFs-pl-SgC"/>
+                            <constraint firstItem="sZg-BC-imz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="767" id="ZVW-Vr-EGl"/>
                             <constraint firstItem="Qny-5O-hZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZbQ-Fs-bRz"/>
-                            <constraint firstItem="R9f-hO-hBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="cFa-a0-kpc"/>
-                            <constraint firstItem="rRL-yb-aaJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="622.5" id="gkS-NZ-r6E"/>
+                            <constraint firstItem="R9f-hO-hBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cFa-a0-kpc"/>
                             <constraint firstItem="Qny-5O-hZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4b-Uq-neW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HSa-ED-b2c" secondAttribute="bottom" constant="30" id="h6F-Z3-Qhx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HSa-ED-b2c" secondAttribute="bottom" constant="90" id="h6F-Z3-Qhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rWv-o4-ktq" secondAttribute="bottom" constant="335" id="hec-c6-wTW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rWv-o4-ktq" secondAttribute="trailing" id="i9s-gn-ka4"/>
                             <constraint firstItem="hsU-9l-Mqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jdI-be-Rrv"/>
-                            <constraint firstAttribute="bottom" secondItem="rRL-yb-aaJ" secondAttribute="bottom" constant="200" id="kCb-9D-abZ"/>
-                            <constraint firstItem="Qny-5O-hZh" firstAttribute="top" secondItem="9nd-Go-rXu" secondAttribute="bottom" id="mXf-p4-m48"/>
+                            <constraint firstAttribute="bottom" secondItem="rRL-yb-aaJ" secondAttribute="bottom" constant="223" id="kCb-9D-abZ"/>
+                            <constraint firstAttribute="bottom" secondItem="sZg-BC-imz" secondAttribute="bottom" constant="63" id="kp8-aa-oO4"/>
+                            <constraint firstItem="sZg-BC-imz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="290" id="mXn-BW-Yp6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsU-9l-Mqm" secondAttribute="trailing" id="mm9-u5-ULT"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nnp-1Q-oE3"/>
                             <constraint firstItem="de2-4t-Sor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ofA-Wt-tcs"/>
                             <constraint firstAttribute="trailing" secondItem="rRL-yb-aaJ" secondAttribute="trailing" id="owz-1q-UHa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsU-9l-Mqm" secondAttribute="trailing" id="p0Y-AL-VHk"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="91" id="rKY-il-zGX"/>
+                            <constraint firstAttribute="trailing" secondItem="de2-4t-Sor" secondAttribute="trailing" id="sNN-2W-cn2"/>
                             <constraint firstItem="rWv-o4-ktq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tC8-9p-ke2"/>
                             <constraint firstItem="4Sh-0j-nLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tqC-zz-Jl8"/>
-                            <constraint firstItem="hsU-9l-Mqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v1k-hD-0y4"/>
-                            <constraint firstItem="Thd-LD-Vmf" firstAttribute="top" secondItem="4Sh-0j-nLh" secondAttribute="bottom" id="whv-Ds-80f"/>
                             <constraint firstItem="rRL-yb-aaJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xLM-75-rZD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="MyAllergy" id="DOF-Mh-tAd"/>
                     <connections>
                         <outlet property="breakfastFoods" destination="1GE-A2-ADe" id="H0E-8D-efv"/>
                         <outlet property="dinnerFoods" destination="2zZ-oC-Ocf" id="zN2-x6-9Lg"/>
@@ -150,7 +154,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aOW-wk-3WT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkU-6T-had" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gtm-GT-YWt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="28J-oK-lb7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+            </objects>
             <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hjn-Jh-0d9">
+            <objects>
+                <viewController id="isy-4Z-btz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rq-m8-8jg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Allergens:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-1O-8La">
+                                <rect key="frame" x="-3" y="171" width="421" height="45"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
+                                <rect key="frame" x="54" y="267" width="307" height="238"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE6-zS-hFM">
+                                <rect key="frame" x="249" y="529" width="112" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iEK-eb-ruW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                                <state key="normal" title="PREDICT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tQx-ot-w7o"/>
+                        <color key="backgroundColor" red="0.88788864213197971" green="0.84601023922524377" blue="0.87186783468528894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="top" secondItem="Dgq-xx-5vp" secondAttribute="bottom" constant="24" id="3Ug-jj-qMk"/>
+                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="centerX" secondItem="tlG-1O-8La" secondAttribute="centerX" id="5Zf-Cb-WDU"/>
+                            <constraint firstItem="tQx-ot-w7o" firstAttribute="bottom" secondItem="uE6-zS-hFM" secondAttribute="bottom" constant="283" id="5yb-49-xNS"/>
+                            <constraint firstItem="tlG-1O-8La" firstAttribute="top" secondItem="tQx-ot-w7o" secondAttribute="top" constant="127" id="O8i-0n-1Xf"/>
+                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="top" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="51" id="Wgf-hU-LQs"/>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="trailing" secondItem="Dgq-xx-5vp" secondAttribute="trailing" id="csb-Iq-Iq3"/>
+                            <constraint firstItem="tQx-ot-w7o" firstAttribute="bottom" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="646" id="edq-vC-PX1"/>
+                            <constraint firstItem="tQx-ot-w7o" firstAttribute="trailing" secondItem="tlG-1O-8La" secondAttribute="trailing" constant="-4" id="g5L-2s-TaW"/>
+                            <constraint firstItem="tQx-ot-w7o" firstAttribute="trailing" secondItem="uE6-zS-hFM" secondAttribute="trailing" constant="53" id="k7F-bP-rrb"/>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="leading" secondItem="tQx-ot-w7o" secondAttribute="leading" constant="249" id="lgk-Ps-zOY"/>
+                            <constraint firstItem="tlG-1O-8La" firstAttribute="leading" secondItem="tQx-ot-w7o" secondAttribute="leading" constant="-3" id="x8Y-OD-Q4M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XP-Cu-MyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="-569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RAp-GQ-bbm">
+            <objects>
+                <viewController id="cRk-W1-cEn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mcT-Pj-lwE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="About Us Page" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dRA-fi-TDV">
+                                <rect key="frame" x="79" y="290" width="257" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DA7-LC-fe4"/>
+                        <color key="backgroundColor" red="0.99545105907574249" green="1" blue="0.92282676021479493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Le-fat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="755"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="view" customModule="MyAllergy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-gK-PVg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Possible Allergens:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wM-L5-tuW">
+                            <rect key="frame" x="-3" y="154" width="421" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="vj1-a1-94i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ueT-ir-ixf">
+                            <rect key="frame" x="54" y="269" width="307" height="238"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="238" id="X9R-IY-rl9"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8o-qH-vhI">
+                            <rect key="frame" x="249" y="527" width="112" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="112" id="5or-aY-kgf"/>
+                                <constraint firstAttribute="height" constant="50" id="YLx-ks-6VS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                            <state key="normal" title="PREDICT">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="predictButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="PMA-qY-5SP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86099813295960403" green="0.93896732233502533" blue="0.88988783053679688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="ueT-ir-ixf" firstAttribute="leading" secondItem="UV6-gK-PVg" secondAttribute="leading" constant="54" id="Fdv-dT-O8G"/>
+                        <constraint firstItem="ueT-ir-ixf" firstAttribute="top" secondItem="1wM-L5-tuW" secondAttribute="bottom" constant="70" id="GkL-v0-JK5"/>
+                        <constraint firstItem="q8o-qH-vhI" firstAttribute="top" secondItem="ueT-ir-ixf" secondAttribute="bottom" constant="20" id="QW5-PH-l3B"/>
+                        <constraint firstItem="q8o-qH-vhI" firstAttribute="trailing" secondItem="ueT-ir-ixf" secondAttribute="trailing" id="WxX-kH-Ylf"/>
+                        <constraint firstItem="1wM-L5-tuW" firstAttribute="leading" secondItem="UV6-gK-PVg" secondAttribute="leading" constant="-3" id="YEc-1o-C3A"/>
+                        <constraint firstItem="ueT-ir-ixf" firstAttribute="centerX" secondItem="1wM-L5-tuW" secondAttribute="centerX" id="csd-3J-h1p"/>
+                        <constraint firstItem="1wM-L5-tuW" firstAttribute="top" secondItem="UV6-gK-PVg" secondAttribute="top" constant="154" id="ngM-gl-d7c"/>
+                        <constraint firstItem="1wM-L5-tuW" firstAttribute="centerX" secondItem="UV6-gK-PVg" secondAttribute="centerX" id="s5M-0U-Erl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UV6-gK-PVg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="E3Z-r3-6CQ"/>
+                <constraint firstItem="UV6-gK-PVg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NPG-QW-Zwi"/>
+                <constraint firstItem="UV6-gK-PVg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SOA-gO-WkP"/>
+                <constraint firstItem="UV6-gK-PVg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yp2-Qn-9TC"/>
+            </constraints>
+            <connections>
+                <outlet property="View" destination="UV6-gK-PVg" id="B9x-rJ-gys"/>
+                <outlet property="textView" destination="ueT-ir-ixf" id="Rkw-YY-w07"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

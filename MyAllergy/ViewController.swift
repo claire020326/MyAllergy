@@ -14,15 +14,14 @@ extension String {
     }
 }
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
-     private func configureTextFields() {
+    
+    private func configureTextFields() {
          breakfastFoods.delegate = self
          lunchFoods.delegate = self
          dinnerFoods.delegate = self
-         symptomsValue.delegate = self
      }
-    
     
     @IBOutlet weak var breakfastFoods: UITextField!
     
@@ -30,7 +29,25 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var dinnerFoods: UITextField!
 
-    @IBOutlet weak var symptomsValue: UITextField!
+    @IBOutlet weak var picker: UIPickerView!
+    
+    let conditions = ["Good", "Ok", "Bad"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return conditions[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return conditions.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let symptoms = conditions[row]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +58,18 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     // tap button effects
     @IBAction func submitTapped(_ sender: UIButton) {
-        var breakfast = breakfastFoods.text!
-        var lunch = lunchFoods.text!
-        var dinner = dinnerFoods.text!
-        var symptoms = symptomsValue.text!
-        var meals = breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
+        let breakfast = breakfastFoods.text!
+        let lunch = lunchFoods.text!
+        let dinner = dinnerFoods.text!
+        
+        var symptoms = ""
+        
+        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+            let symptoms = conditions[row]
+       }
+        
+//        MAKE SURE TO ADD SYMPTOMS INTO THIS CHAIN LATER
+        let meals = breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
         
         let file = "allergy_log_file.txt"
 
@@ -80,7 +104,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                         try meals.write(to: fileURL, atomically: false, encoding: .utf8)
                     } catch {/* error handling here */}
 
-                    var new_meals = ""
+                    let new_meals = ""
                     
                     //reading new file
                     do {
@@ -92,13 +116,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             self.breakfastFoods.text = ""
             self.lunchFoods.text = ""
             self.dinnerFoods.text = ""
-            self.symptomsValue.text = ""
         }
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
     }
     // notifications
     @objc func registerLocal() {
@@ -193,4 +217,5 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 }
+
 

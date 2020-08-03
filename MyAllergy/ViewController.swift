@@ -37,8 +37,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         configureTapGesture()
         configureTextFields()
-        
-        pageControl.numberOfPages = 3
     }
     
     // tap button effects

@@ -42,7 +42,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         configureTapGesture()
         configureTextFields()
         
-        symptomList = ["good", git merge --abortg"ok", "bad", "terrible"]
+        symptomList = ["good", "ok", "bad", "terrible"]
     }
     
     // tap button effects

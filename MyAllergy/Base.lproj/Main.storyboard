@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZG-gK-dz8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -67,14 +67,16 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-Lx-6uD">
-                                        <rect key="frame" x="0.0" y="424" width="374" height="101"/>
+                                        <rect key="frame" x="0.0" y="423.5" width="374" height="101"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="rDK-6m-J2A"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="qNC-8Y-rI1"/>
+                                        </connections>
                                     </pickerView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="JZO-xc-q1j" firstAttribute="height" secondItem="1GE-A2-ADe" secondAttribute="height" id="a6B-yl-51x"/>
-                                    <constraint firstItem="Xgq-Lx-6uD" firstAttribute="width" secondItem="1GE-A2-ADe" secondAttribute="width" id="dNH-hR-G0P"/>
                                     <constraint firstItem="2zZ-oC-Ocf" firstAttribute="height" secondItem="1GE-A2-ADe" secondAttribute="height" id="gEt-Sn-itO"/>
-                                    <constraint firstItem="Xgq-Lx-6uD" firstAttribute="height" secondItem="1GE-A2-ADe" secondAttribute="height" id="kpC-Px-RKJ"/>
                                     <constraint firstItem="JZO-xc-q1j" firstAttribute="width" secondItem="1GE-A2-ADe" secondAttribute="width" id="pvc-eU-z7c"/>
                                     <constraint firstItem="2zZ-oC-Ocf" firstAttribute="width" secondItem="1GE-A2-ADe" secondAttribute="width" id="qEM-Od-CLy"/>
                                 </constraints>
@@ -129,9 +131,10 @@
                     <navigationItem key="navigationItem" title="MyAllergy" id="DOF-Mh-tAd"/>
                     <connections>
                         <outlet property="breakfastFoods" destination="1GE-A2-ADe" id="H0E-8D-efv"/>
+                        <outlet property="datePicker" destination="fBS-pV-f7c" id="PA8-qa-eda"/>
                         <outlet property="dinnerFoods" destination="2zZ-oC-Ocf" id="zN2-x6-9Lg"/>
                         <outlet property="lunchFoods" destination="JZO-xc-q1j" id="xuP-J7-Qej"/>
-                        <outlet property="picker" destination="Xgq-Lx-6uD" id="bqt-gJ-dm0"/>
+                        <outlet property="symptomPicker" destination="Xgq-Lx-6uD" id="bqt-gJ-dm0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,7 +144,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3qa-de-lly">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hkb-8c-B6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="IZG-gK-dz8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="daD-HZ-cPo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -154,6 +156,7 @@
                         <segue destination="cRk-W1-cEn" kind="relationship" relationship="viewControllers" id="T0N-o2-OKv"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkb-8c-B6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="190" y="44"/>
         </scene>
@@ -213,7 +216,6 @@
         <!--View Controller-->
         <scene sceneID="RAp-GQ-bbm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Le-fat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="cRk-W1-cEn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mcT-Pj-lwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -233,6 +235,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="tia-vh-kjQ"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Le-fat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029" y="691"/>
         </scene>

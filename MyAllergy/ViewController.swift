@@ -16,6 +16,7 @@ extension String {
 
 class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var symptomList:[String] = [String]()
     
     private func configureTextFields() {
          breakfastFoods.delegate = self
@@ -29,31 +30,19 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
     
     @IBOutlet weak var dinnerFoods: UITextField!
 
-    @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet weak var symptomPicker: UIPickerView!
     
-    let conditions = ["Good", "Ok", "Bad"]
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return conditions[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return conditions.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let symptoms = conditions[row]
-    }
+    @IBOutlet weak var datePicker: UIDatePicker!
+   
+    let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTapGesture()
         configureTextFields()
+        
+        symptomList = ["good", git merge --abortg"ok", "bad", "terrible"]
     }
     
     // tap button effects
@@ -62,54 +51,55 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         let lunch = lunchFoods.text!
         let dinner = dinnerFoods.text!
         
-        var symptoms = ""
+        // date
+        dateFormatter.dateStyle = DateFormatter.Style.short
+        let dateChosen = dateFormatter.string(from: datePicker.date)
         
-        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            let symptoms = conditions[row]
-       }
+        // get the selected symptoms
+        let symptoms = symptomList[symptomPicker.selectedRow(inComponent: 0)]
         
-//        MAKE SURE TO ADD SYMPTOMS INTO THIS CHAIN LATER
-        let meals = breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
+        // merge all the info
+        let info = dateChosen + ": " + breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
         
+        // update the log file with today's info
         let file = "allergy_log_file.txt"
-
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             let fileURL = dir.appendingPathComponent(file)
             let fileManager = FileManager.default
             if fileManager.fileExists(atPath: file) {
                 
-                var new_meals = ""
+                var new_info = ""
                 
                 //reading existing file
                 do {
-                    let old_meals = try String(contentsOf: fileURL, encoding: .utf8)
-                    new_meals = old_meals + meals
+                    let old_info = try String(contentsOf: fileURL, encoding: .utf8)
+                    new_info = old_info + info
                 } catch {/* error handling here */}
                 
                 //writing into the files
                 do {
-                    try new_meals.write(to: fileURL, atomically: false, encoding: .utf8)
+                    try new_info.write(to: fileURL, atomically: false, encoding: .utf8)
                 } catch {/* error handling here */}
 
                 //reading the revised file
                 do {
-                    let new_meals1 = try String(contentsOf: fileURL, encoding: .utf8)
-                    print(new_meals1)
+                    let new_info1 = try String(contentsOf: fileURL, encoding: .utf8)
+                    print(new_info1)
                 } catch {/* error handling here */}
                 
                 } else {
                     //writing new file
                     do {
-                        try meals.write(to: fileURL, atomically: false, encoding: .utf8)
+                        try info.write(to: fileURL, atomically: false, encoding: .utf8)
                     } catch {/* error handling here */}
 
-                    let new_meals = ""
+                    let new_info = ""
                     
                     //reading new file
                     do {
-                        let old_meals = try String(contentsOf: fileURL, encoding: .utf8)
-                        print(old_meals)
+                        let old_info = try String(contentsOf: fileURL, encoding: .utf8)
+                        print(old_info)
                     } catch {/* error handling here */}
                 }
             
@@ -117,13 +107,26 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
             self.lunchFoods.text = ""
             self.dinnerFoods.text = ""
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)-> Int {
+        return symptomList.count
+    }
+    
+    // The data to return fopr the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int)-> String? {
+        return symptomList[row]
+    }
+    
     // notifications
     @objc func registerLocal() {
         let center = UNUserNotificationCenter.current()
@@ -217,5 +220,4 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 }
-
 

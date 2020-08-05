@@ -14,7 +14,7 @@ extension String {
     }
 }
 
-let file = "allergy_log_file.txt"
+let file = "allergyLogFile.txt"
 
 class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -63,7 +63,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         symptoms = symptomList[symptomPicker.selectedRow(inComponent: 0)]
         
         // merge all the info
-        var newLog = dateChosen + ":" + breakfast + "," + lunch + "," + dinner + ":" + symptoms + "\n"
+        let newLog = dateChosen + ": " + breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
         
         // update the log file with today's info
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {

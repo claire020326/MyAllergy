@@ -69,55 +69,22 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             let fileURL = dir.appendingPathComponent(file)
-            let fileManager = FileManager.default
-            
-//            if fileManager.fileExists(atPath: file) {
-//
-//                var new_info = ""
-//
-//                //reading existing file
-//                do {
-//                    info = try String(contentsOf: fileURL, encoding: .utf8)
-//                    new_info = info + info
-//                } catch {/* error handling here */}
-//
-//                //writing into the files
-//                do {
-//                    try new_info.write(to: fileURL, atomically: false, encoding: .utf8)
-//                } catch {/* error handling here */}
-//
-//                //reading the revised file
-//                do {
-//                    let new_info1 = try String(contentsOf: fileURL, encoding: .utf8)
-//                    print(new_info1)
-//                } catch {/* error handling here */}
-//
-//            } else {
-//                //writing new file
-//                do {
-//                    try info.write(to: fileURL, atomically: false, encoding: .utf8)
-//                } catch {/* error handling here */}
-//
-//                let new_info = ""
-//
-//                //reading new file
-//                do {
-//                    let old_info = try String(contentsOf: fileURL, encoding: .utf8)
-//                    print(old_info)
-//                } catch {/* error handling here */}
-//            }
-            
+
             var oldLog = ""
             // if the file exists, load it into oldInfo
-            if fileManager.fileExists(atPath: file){
+            let fileExists = (try? fileURL.checkResourceIsReachable()) ?? false
+            if fileExists {
                 // reading existing file
                 do {
                     oldLog = try String(contentsOf: fileURL, encoding: .utf8)
                 } catch {/* error handling here */}
+                print("reading existing log file")
+            }else{
+                print("creating new log file")
             }
             
             // append newInfo to the end of oldInfo -> info
-            var fullLog = oldLog + newLog
+            let fullLog = oldLog + newLog
             
             // write merged info the file
             do {

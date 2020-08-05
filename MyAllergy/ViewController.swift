@@ -14,9 +14,15 @@ extension String {
     }
 }
 
+let file = "allergy_log_file.txt"
+
 class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var symptomList:[String] = [String]()
+    var dateChosen = ""
+    var symptoms = ""
+    var info = ""
+    
+    var symptomList: [String] = [String]()
     
     private func configureTextFields() {
          breakfastFoods.delegate = self
@@ -53,28 +59,28 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         
         // date
         dateFormatter.dateStyle = DateFormatter.Style.short
-        let dateChosen = dateFormatter.string(from: datePicker.date)
+        dateChosen = dateFormatter.string(from: datePicker.date)
         
         // get the selected symptoms
-        let symptoms = symptomList[symptomPicker.selectedRow(inComponent: 0)]
+        symptoms = symptomList[symptomPicker.selectedRow(inComponent: 0)]
         
         // merge all the info
-        let info = dateChosen + ": " + breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
+        info = dateChosen + ":" + breakfast + "," + lunch + "," + dinner + ":" + symptoms + "\n"
         
         // update the log file with today's info
-        let file = "allergy_log_file.txt"
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             let fileURL = dir.appendingPathComponent(file)
             let fileManager = FileManager.default
+            
             if fileManager.fileExists(atPath: file) {
                 
                 var new_info = ""
                 
                 //reading existing file
                 do {
-                    let old_info = try String(contentsOf: fileURL, encoding: .utf8)
-                    new_info = old_info + info
+                    info = try String(contentsOf: fileURL, encoding: .utf8)
+                    new_info = info + info
                 } catch {/* error handling here */}
                 
                 //writing into the files

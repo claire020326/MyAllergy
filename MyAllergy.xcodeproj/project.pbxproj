@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C63C10424D9CA14004D01BA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63C10324D9CA14004D01BA /* ViewController2.swift */; };
 		1CE2425424CF9447003CB9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2425324CF9447003CB9B8 /* AppDelegate.swift */; };
 		1CE2425624CF9447003CB9B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2425524CF9447003CB9B8 /* SceneDelegate.swift */; };
 		1CE2425824CF9447003CB9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2425724CF9447003CB9B8 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C63C10324D9CA14004D01BA /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		1CE2425024CF9447003CB9B8 /* MyAllergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAllergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE2425324CF9447003CB9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CE2425524CF9447003CB9B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				1CE2425524CF9447003CB9B8 /* SceneDelegate.swift */,
 				1CE2425724CF9447003CB9B8 /* ViewController.swift */,
 				1CE2425924CF9447003CB9B8 /* Main.storyboard */,
+				1C63C10324D9CA14004D01BA /* ViewController2.swift */,
 				1CE2425C24CF944B003CB9B8 /* Assets.xcassets */,
 				1CE2425E24CF944B003CB9B8 /* LaunchScreen.storyboard */,
 				1CE2426124CF944B003CB9B8 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE2425824CF9447003CB9B8 /* ViewController.swift in Sources */,
+				1C63C10424D9CA14004D01BA /* ViewController2.swift in Sources */,
 				1CE2425424CF9447003CB9B8 /* AppDelegate.swift in Sources */,
 				1CE2425624CF9447003CB9B8 /* SceneDelegate.swift in Sources */,
 			);

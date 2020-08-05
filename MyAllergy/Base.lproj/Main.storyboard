@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="190" y="44"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="hjn-Jh-0d9">
             <objects>
-                <viewController id="isy-4Z-btz" sceneMemberID="viewController">
+                <viewController id="isy-4Z-btz" customClass="ViewController2" customModule="MyAllergy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Rq-m8-8jg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,6 +190,9 @@
                                 <state key="normal" title="PREDICT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="predictTapped:" destination="isy-4Z-btz" eventType="touchUpInside" id="h4k-EH-wNd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88788864213197971" green="0.84601023922524377" blue="0.87186783468528894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -208,6 +211,9 @@
                         <viewLayoutGuide key="safeArea" id="tQx-ot-w7o"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="3Bb-ue-Fe5"/>
+                    <connections>
+                        <outlet property="allergensTextView" destination="Dgq-xx-5vp" id="FT4-yx-8Gg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8XP-Cu-MyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,18 +8,59 @@
 import UIKit
 import UserNotifications
 
+struct Log : Codable {
+    var breakfast: String
+    var lunch: String
+    var dinner: String
+    var otherMeals: String
+    var Symptom : String
+}
+
+//reads the JSON file out
+func loadFile(pathName: URL) -> [String: Log]{
+
+    var logs: [String: Log] = [String: Log]()
+    
+    let fileExists = (try? pathName.checkResourceIsReachable()) ?? false
+    if fileExists {
+        do{
+            let jsonData = try Data(contentsOf: pathName)
+            let decoder = JSONDecoder()
+            logs = try decoder.decode([String: Log].self, from: jsonData)
+        } catch {}
+    }
+    return logs
+}
+
+//writes into the JSON file
+func writeToFile(pathName: URL, logs: [String: Log]) {
+    do{
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        let JsonData = try encoder.encode(logs)
+        try JsonData.write(to: pathName)
+    }catch{}
+}
+
+//appends new data into the JSON file
+func addEntry(pathName: URL, newDate: String, newLog: Log) {
+    var logs: [String: Log] = loadFile(pathName: pathName)
+    logs[newDate] = newLog
+    writeToFile(pathName: pathName, logs: logs)
+}
+
 extension String {
     mutating func addString(str: String) {
         self = self + str
     }
 }
 
-let file = "allergyLogFile.txt"
+let file = "allergyLogFile.json"
 
 class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
     
     var dateChosen = ""
-    var symptoms = ""
+//    var symptom = ""
     var symptomList: [String] = [String]()
     
     private func configureTextFields() {
@@ -53,10 +94,17 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
     
     // tap button effects
     @IBAction func submitTapped(_ sender: UIButton) {
+        
+        // get date
+        dateFormatter.dateStyle = DateFormatter.Style.short
+        dateChosen = dateFormatter.string(from: datePicker.date)
+        
+        // get breakfast, lunch and dinner
         var breakfast = breakfastFoods.text!
         var lunch = lunchFoods.text!
         var dinner = dinnerFoods.text!
         
+        // clean up breakfast, lunch, dinner
         if breakfast.contains(":") {
             breakfast = breakfast.replacingOccurrences(of: ":", with: "")
         }
@@ -67,47 +115,21 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
             dinner = dinner.replacingOccurrences(of: ":", with: "")
         }
         
-        // date
-        dateFormatter.dateStyle = DateFormatter.Style.short
-        dateChosen = dateFormatter.string(from: datePicker.date)
-        
         // get the selected symptoms
-        symptoms = symptomList[symptomPicker.selectedRow(inComponent: 0)]
-        
-        // merge all the info
-        let newLog = dateChosen + ": " + breakfast + ", " + lunch + ", " + dinner + ": " + symptoms + "\n"
+        let symptom = symptomList[symptomPicker.selectedRow(inComponent: 0)]
         
         // update the log file with today's info
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             let fileURL = dir.appendingPathComponent(file)
 
-            var oldLog = ""
-            // if the file exists, load it into oldInfo
-            let fileExists = (try? fileURL.checkResourceIsReachable()) ?? false
-            if fileExists {
-                // reading existing file
-                do {
-                    oldLog = try String(contentsOf: fileURL, encoding: .utf8)
-                } catch {/* error handling here */}
-                print("reading existing log file")
-            }else{
-                print("creating new log file")
-            }
-            
-            // append newInfo to the end of oldInfo -> info
-            let fullLog = oldLog + newLog
-            
-            // write merged info the file
-            do {
-                try fullLog.write(to: fileURL, atomically: false, encoding: .utf8)
-            } catch {/* error handling here */}
+            // create newLog and add it into existing log file
+            let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, otherMeals: "", Symptom: symptom)
+            addEntry(pathName: fileURL, newDate: dateChosen, newLog: newLog)
             
             // read out the new file to verify
-            do {
-                let temp = try String(contentsOf: fileURL, encoding: .utf8)
-                print(temp)
-            } catch {/* error handling here */}
+            let loadedLogs = loadFile(pathName: fileURL)
+            print(loadedLogs)
         }
         
         // clean up the text field

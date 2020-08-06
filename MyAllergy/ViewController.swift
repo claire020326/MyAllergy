@@ -16,7 +16,7 @@ extension String {
 
 let file = "allergyLogFile.txt"
 
-class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
     
     var dateChosen = ""
     var symptoms = ""
@@ -47,13 +47,25 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         configureTextFields()
         
         symptomList = ["good", "ok", "bad", "terrible"]
+        
+        overrideUserInterfaceStyle = .light
     }
     
     // tap button effects
     @IBAction func submitTapped(_ sender: UIButton) {
-        let breakfast = breakfastFoods.text!
-        let lunch = lunchFoods.text!
-        let dinner = dinnerFoods.text!
+        var breakfast = breakfastFoods.text!
+        var lunch = lunchFoods.text!
+        var dinner = dinnerFoods.text!
+        
+        if breakfast.contains(":") {
+            breakfast = breakfast.replacingOccurrences(of: ":", with: "")
+        }
+        if lunch.contains(":") {
+            lunch = lunch.replacingOccurrences(of: ":", with: "")
+        }
+        if dinner.contains(":") {
+            dinner = dinner.replacingOccurrences(of: ":", with: "")
+        }
         
         // date
         dateFormatter.dateStyle = DateFormatter.Style.short

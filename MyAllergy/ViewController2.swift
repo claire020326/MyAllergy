@@ -136,6 +136,7 @@ class ViewController2: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        overrideUserInterfaceStyle = .light
     }
 
 }

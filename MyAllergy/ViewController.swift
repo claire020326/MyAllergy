@@ -13,7 +13,12 @@ struct Log : Codable {
     var lunch: String
     var dinner: String
     var otherMeals: String
-    var Symptom : String
+    var symptom : String
+}
+
+func mergeFood(log: Log) -> String{
+    
+    return [log.breakfast, log.lunch, log.dinner, log.otherMeals].joined(separator: ", ")
 }
 
 //reads the JSON file out
@@ -124,9 +129,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
             let fileURL = dir.appendingPathComponent(file)
 
             // create newLog and add it into existing log file
-            let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, otherMeals: "", Symptom: symptom)
+            let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, otherMeals: "", symptom: symptom)
             addEntry(pathName: fileURL, newDate: dateChosen, newLog: newLog)
-            
+//
             // read out the new file to verify
             let loadedLogs = loadFile(pathName: fileURL)
             print(loadedLogs)

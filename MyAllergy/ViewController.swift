@@ -12,13 +12,13 @@ struct Log : Codable {
     var breakfast: String
     var lunch: String
     var dinner: String
-    var otherMeals: String
+    var snacks: String
     var symptom : String
 }
 
 func mergeFood(log: Log) -> String{
     
-    return [log.breakfast, log.lunch, log.dinner, log.otherMeals].joined(separator: ", ")
+    return [log.breakfast, log.lunch, log.dinner, log.snacks].joined(separator: ", ")
 }
 
 // labeling dir and fileURL
@@ -75,6 +75,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
          breakfastFoods.delegate = self
          lunchFoods.delegate = self
          dinnerFoods.delegate = self
+         snacksFoods.delegate = self
      }
     
     @IBOutlet weak var breakfastFoods: UITextField!
@@ -82,15 +83,14 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
     @IBOutlet weak var lunchFoods: UITextField!
     
     @IBOutlet weak var dinnerFoods: UITextField!
-
+    
+    @IBOutlet weak var snacksFoods: UITextField!
+    
     @IBOutlet weak var symptomPicker: UIPickerView!
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func dateChanged(_ sender: UIDatePicker) {
-        
-//        if datePicker.date.la
-        
         
         let fileExists = (try? fileURL!.checkResourceIsReachable()) ?? false
         if fileExists {
@@ -106,18 +106,16 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
                 breakfastFoods.text = oldLog?.breakfast
                 lunchFoods.text = oldLog?.lunch
                 dinnerFoods.text = oldLog?.dinner
+                snacksFoods.text = oldLog?.snacks
                 
                 let row = symptomList.index(of: oldLog!.symptom)
                 symptomPicker.selectRow(row!, inComponent: 0, animated: false)
-                
+
             }
         }
-        
-        
     }
     
     let dateFormatter = DateFormatter()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,12 +136,13 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateChosen = dateFormatter.string(from: datePicker.date)
         
-        // get breakfast, lunch and dinner
+        // get breakfast, lunch and dinner, snacks
         var breakfast = breakfastFoods.text!
         var lunch = lunchFoods.text!
         var dinner = dinnerFoods.text!
+        var snacks = snacksFoods.text!
         
-        // clean up breakfast, lunch, dinner
+        // clean up breakfast, lunch, dinner, snacks
         if breakfast.contains(":") {
             breakfast = breakfast.replacingOccurrences(of: ":", with: "")
         }
@@ -153,6 +152,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         if dinner.contains(":") {
             dinner = dinner.replacingOccurrences(of: ":", with: "")
         }
+        if snacks.contains(":") {
+            snacks = snacks.replacingOccurrences(of: ":", with: "")
+        }
         
         // get the selected symptoms
         let symptom = symptomList[symptomPicker.selectedRow(inComponent: 0)]
@@ -161,7 +163,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             // create newLog and add it into existing log file
-            let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, otherMeals: "", symptom: symptom)
+            let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, snacks: snacks, symptom: symptom)
             addEntry(pathName: fileURL!, newDate: dateChosen, newLog: newLog)
 //
             // read out the new file to verify
@@ -169,10 +171,11 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
             print(loadedLogs)
         }
         
-        // clean up the text field
+        // clean up the text fields
         self.breakfastFoods.text = ""
         self.lunchFoods.text = ""
         self.dinnerFoods.text = ""
+        self.snacksFoods.text = ""
     }
     
     override func didReceiveMemoryWarning() {
@@ -251,7 +254,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         
         let content = UNMutableNotificationContent()
         content.title = "Reminder"
-        content.body = "It's time to enter in what you just ate for dinner!"
+        content.body = "It's time to enter in what you just ate for dinner and all your snacks/ other meals today!"
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = .default
@@ -286,4 +289,3 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 }
-

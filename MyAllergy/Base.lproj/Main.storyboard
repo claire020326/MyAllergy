@@ -22,19 +22,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de2-4t-Sor">
-                                <rect key="frame" x="20" y="355" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="330" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWv-o4-ktq">
-                                <rect key="frame" x="20" y="478.5" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="428.5" width="394" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snacks/ Other Meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-01-mjb">
+                                <rect key="frame" x="20" y="528" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Symptoms Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-yb-aaJ" userLabel="Symptoms">
-                                <rect key="frame" x="20" y="596.5" width="394" height="29.5"/>
+                                <rect key="frame" x="20" y="626.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -49,25 +55,32 @@
                                 <rect key="frame" x="20" y="262.5" width="374" height="450.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. milk, cereal, scrambled eggs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1GE-A2-ADe" userLabel="breakfast text box">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. pepperoni cheese pizza, lettuce, tomato" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-xc-q1j" userLabel="lunch text box">
-                                        <rect key="frame" x="0.0" y="122.5" width="374" height="83"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. cheese pizza, lettuce, tomato" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-xc-q1j" userLabel="lunch text box">
+                                        <rect key="frame" x="0.0" y="98" width="374" height="58"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. mashed potato, gravy, steak, green beans" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-oC-Ocf" userLabel="dinner text box">
-                                        <rect key="frame" x="0.0" y="245.5" width="374" height="82.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. mashed potatoes, steak, beans" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-oC-Ocf" userLabel="dinner text box">
+                                        <rect key="frame" x="0.0" y="196" width="374" height="58.5"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. strawberries, lays chips" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idq-6U-GSN" userLabel="snacks text box">
+                                        <rect key="frame" x="0.0" y="294.5" width="374" height="58"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-Lx-6uD">
-                                        <rect key="frame" x="0.0" y="368" width="374" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="392.5" width="374" height="58"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="rDK-6m-J2A"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="qNC-8Y-rI1"/>
@@ -108,16 +121,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZg-BC-imz" secondAttribute="trailing" constant="134" id="58M-qY-7vV"/>
                             <constraint firstItem="R9f-hO-hBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AqA-dD-hKd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSa-ED-b2c" secondAttribute="trailing" constant="20" id="B4r-mF-h7K"/>
+                            <constraint firstItem="dbx-01-mjb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="528" id="BPy-wC-5wG"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CPv-U5-0nP"/>
                             <constraint firstItem="hsU-9l-Mqm" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="125" id="Cfb-mV-ZYs"/>
-                            <constraint firstItem="de2-4t-Sor" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="355" id="GSe-xU-3N1"/>
+                            <constraint firstItem="de2-4t-Sor" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="330" id="GSe-xU-3N1"/>
                             <constraint firstItem="sZg-BC-imz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="749" id="ZVW-Vr-EGl"/>
+                            <constraint firstItem="dbx-01-mjb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="c8r-MC-58l"/>
                             <constraint firstItem="R9f-hO-hBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cFa-a0-kpc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HSa-ED-b2c" secondAttribute="bottom" constant="100" id="h6F-Z3-Qhx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rWv-o4-ktq" secondAttribute="bottom" constant="305" id="hec-c6-wTW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rWv-o4-ktq" secondAttribute="bottom" constant="355" id="hec-c6-wTW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rWv-o4-ktq" secondAttribute="trailing" id="i9s-gn-ka4"/>
                             <constraint firstItem="hsU-9l-Mqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jdI-be-Rrv"/>
-                            <constraint firstAttribute="bottom" secondItem="rRL-yb-aaJ" secondAttribute="bottom" constant="270" id="kCb-9D-abZ"/>
+                            <constraint firstAttribute="bottom" secondItem="rRL-yb-aaJ" secondAttribute="bottom" constant="240" id="kCb-9D-abZ"/>
                             <constraint firstAttribute="bottom" secondItem="sZg-BC-imz" secondAttribute="bottom" constant="95.5" id="kp8-aa-oO4"/>
                             <constraint firstItem="sZg-BC-imz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="mXn-BW-Yp6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsU-9l-Mqm" secondAttribute="trailing" id="mm9-u5-ULT"/>
@@ -126,6 +141,7 @@
                             <constraint firstAttribute="trailing" secondItem="rRL-yb-aaJ" secondAttribute="trailing" id="owz-1q-UHa"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="155" id="rKY-il-zGX"/>
                             <constraint firstAttribute="trailing" secondItem="de2-4t-Sor" secondAttribute="trailing" id="sNN-2W-cn2"/>
+                            <constraint firstAttribute="trailing" secondItem="dbx-01-mjb" secondAttribute="trailing" id="sSL-vL-Yue"/>
                             <constraint firstItem="rWv-o4-ktq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tC8-9p-ke2"/>
                             <constraint firstItem="rRL-yb-aaJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xLM-75-rZD"/>
                         </constraints>
@@ -140,6 +156,7 @@
                         <outlet property="datePicker" destination="fBS-pV-f7c" id="PA8-qa-eda"/>
                         <outlet property="dinnerFoods" destination="2zZ-oC-Ocf" id="zN2-x6-9Lg"/>
                         <outlet property="lunchFoods" destination="JZO-xc-q1j" id="xuP-J7-Qej"/>
+                        <outlet property="snacksFoods" destination="idq-6U-GSN" id="fgc-SB-J0e"/>
                         <outlet property="symptomPicker" destination="Xgq-Lx-6uD" id="bqt-gJ-dm0"/>
                     </connections>
                 </viewController>
@@ -258,12 +275,13 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Instructions: Enter in all of the ingredients of each meal that you eat in a day. Please separate the ingredients with &quot;, &quot;" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
-                                        <rect key="frame" x="33" y="590" width="348" height="111"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
+                                        <rect key="frame" x="33" y="590" width="348" height="115"/>
                                         <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="111" id="vAz-9k-9b1"/>
+                                            <constraint firstAttribute="height" constant="115" id="vAz-9k-9b1"/>
                                         </constraints>
+                                        <string key="text">Instructions: Enter in all the ingredients of each meal that you eat in a day. Include drinks, fruits, and desserts! Please separate the ingredients with ", "</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -273,7 +291,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -290,7 +308,7 @@
                                     <constraint firstItem="8IU-S2-SjC" firstAttribute="top" secondItem="QCs-Na-eRq" secondAttribute="bottom" constant="8" id="YP8-nL-wbq"/>
                                     <constraint firstItem="QCs-Na-eRq" firstAttribute="centerX" secondItem="KGx-3g-bIw" secondAttribute="centerX" id="ere-Ui-FOf"/>
                                     <constraint firstItem="8IU-S2-SjC" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="39" id="l9c-cG-oWh"/>
-                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="112" id="lsJ-ld-1vD"/>
+                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="108" id="lsJ-ld-1vD"/>
                                     <constraint firstItem="KGx-3g-bIw" firstAttribute="centerX" secondItem="2Il-lS-YRM" secondAttribute="centerX" id="v86-TL-I6g"/>
                                     <constraint firstItem="04T-gb-MuW" firstAttribute="centerX" secondItem="8IU-S2-SjC" secondAttribute="centerX" id="yb9-2J-w06"/>
                                 </constraints>

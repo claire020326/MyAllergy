@@ -66,7 +66,7 @@ extension String {
 
 let file = "allergyLogFile.json"
 
-class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
+class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var dateChosen = ""
     var symptomList: [String] = [String]()
@@ -87,22 +87,18 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    func futureDateNotAllowed() {
-        datePicker.maximumDate = Date()
-    }
-    
     @IBAction func dateChanged(_ sender: UIDatePicker) {
+        
+//        if datePicker.date.la
+        
         
         let fileExists = (try? fileURL!.checkResourceIsReachable()) ?? false
         if fileExists {
             let loadedLogs = loadFile(pathName: fileURL!)
             
-            print("date change detected")
             dateFormatter.dateStyle = DateFormatter.Style.short
             dateChosen = dateFormatter.string(from: datePicker.date)
             
-            print(dateChosen)
-
             // Get the dictionary key (all existing dates) and see if it contains the chosen date
             let existingDates = loadedLogs.keys
             if existingDates.contains(dateChosen){
@@ -132,6 +128,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         symptomList = ["good", "ok", "bad", "terrible"]
         
         overrideUserInterfaceStyle = .light
+        datePicker.maximumDate = Date()
     }
     
     // tap button effects

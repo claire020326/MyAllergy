@@ -11,44 +11,49 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="D40-KT-1qC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-fQ-lz2">
-                                <rect key="frame" x="70" y="82" width="274" height="476"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-sx-616">
+                                <rect key="frame" x="70" y="52" width="274" height="476"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-x3-eha">
-                                <rect key="frame" x="88" y="539" width="239" height="96"/>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="70"/>
-                                <color key="textColor" red="0.41352198515822158" green="0.58920923223350252" blue="0.56150240990571398" alpha="0.88345462330000002" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVI-V9-wHU">
+                                <rect key="frame" x="90.5" y="400" width="233.5" height="145"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                <color key="textColor" red="0.3732037842" green="0.5447500944" blue="0.55686444040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Personal Allergy Diagnosing Aid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btC-L2-1HT">
-                                <rect key="frame" x="62" y="628" width="293" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-vN-Hzp">
+                                <rect key="frame" x="39" y="553" width="336" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="8zN-DM-9ZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.9293305838" green="0.85227240479999999" blue="0.78823800980000003" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.9628412127" green="0.90700799229999995" blue="0.85488480330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cFO-fQ-lz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Dat-9u-M4p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cFO-fQ-lz2" secondAttribute="bottom" constant="304" id="QIK-yJ-20K"/>
-                            <constraint firstItem="tuO-x3-eha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="W7G-Xe-DZL"/>
-                            <constraint firstItem="tuO-x3-eha" firstAttribute="centerX" secondItem="cFO-fQ-lz2" secondAttribute="centerX" id="oe1-nG-kXX"/>
-                            <constraint firstItem="cFO-fQ-lz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ofE-qs-O7W"/>
-                            <constraint firstItem="tuO-x3-eha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="495" id="vEO-Qf-jQw"/>
-                            <constraint firstItem="cFO-fQ-lz2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vfm-Ve-nq4"/>
+                            <constraint firstItem="TVI-V9-wHU" firstAttribute="centerX" secondItem="mqm-sx-616" secondAttribute="centerX" id="0ce-MS-E9s"/>
+                            <constraint firstItem="Ndc-Fn-6Rk" firstAttribute="bottom" secondItem="mqm-sx-616" secondAttribute="bottom" constant="334" id="4cw-h8-Ozh"/>
+                            <constraint firstItem="mqm-sx-616" firstAttribute="top" secondItem="Ndc-Fn-6Rk" secondAttribute="top" constant="8" id="8z6-TC-2hp"/>
+                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="centerX" secondItem="TVI-V9-wHU" secondAttribute="centerX" id="Cz0-xG-8b3"/>
+                            <constraint firstItem="TVI-V9-wHU" firstAttribute="top" secondItem="Ndc-Fn-6Rk" secondAttribute="top" constant="356" id="MH1-jo-tpR"/>
+                            <constraint firstItem="mqm-sx-616" firstAttribute="leading" secondItem="Ndc-Fn-6Rk" secondAttribute="leading" constant="70" id="MoS-5x-GN6"/>
+                            <constraint firstItem="mqm-sx-616" firstAttribute="centerX" secondItem="D40-KT-1qC" secondAttribute="centerX" id="WpV-xw-Qw4"/>
+                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="top" secondItem="TVI-V9-wHU" secondAttribute="bottom" constant="8" id="cxh-5F-5d6"/>
+                            <constraint firstItem="Ndc-Fn-6Rk" firstAttribute="bottom" secondItem="fIr-vN-Hzp" secondAttribute="bottom" constant="282" id="iU6-7J-won"/>
+                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="leading" secondItem="Ndc-Fn-6Rk" secondAttribute="leading" constant="39" id="x2C-Vg-P29"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Ndc-Fn-6Rk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="70" y="369"/>
         </scene>
     </scenes>
     <resources>

@@ -84,6 +84,9 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-pV-f7c">
                                 <rect key="frame" x="0.0" y="115" width="414" height="109"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0v4-w8-80j"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZg-BC-imz">
                                 <rect key="frame" x="135" y="750" width="145" height="49"/>
@@ -154,9 +157,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PHX-3k-cjw"/>
-                        <segue destination="isy-4Z-btz" kind="relationship" relationship="viewControllers" id="yYa-Yx-RdW"/>
-                        <segue destination="cRk-W1-cEn" kind="relationship" relationship="viewControllers" id="T0N-o2-OKv"/>
+                        <segue destination="OzE-kM-jNw" kind="relationship" relationship="viewControllers" id="032-Bd-awM"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Y7I-1J-Dcq"/>
+                        <segue destination="isy-4Z-btz" kind="relationship" relationship="viewControllers" id="gS1-AX-sAW"/>
+                        <segue destination="cRk-W1-cEn" kind="relationship" relationship="viewControllers" id="qeo-7k-ihj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkb-8c-B6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -224,6 +228,84 @@
             </objects>
             <point key="canvasLocation" x="1028.985507246377" y="43.526785714285715"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="WVQ-Lt-Xpo">
+            <objects>
+                <viewController id="OzE-kM-jNw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DwE-Tt-hWs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="2Il-lS-YRM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="KGx-3g-bIw">
+                                        <rect key="frame" x="70" y="52" width="274" height="427"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCs-Na-eRq">
+                                        <rect key="frame" x="90.5" y="400" width="233.5" height="96"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                        <color key="textColor" red="0.3732037842" green="0.5447500944" blue="0.55686444040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-S2-SjC">
+                                        <rect key="frame" x="39" y="504" width="336" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="ney-BY-bUQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Instructions: Enter in all of the ingredients of each meal that you eat in a day. Please separate the ingredients with &quot;, &quot;" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
+                                        <rect key="frame" x="33" y="590" width="348" height="111"/>
+                                        <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="111" id="vAz-9k-9b1"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="* This application is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="buS-IM-bnO">
+                                        <rect key="frame" x="33" y="771" width="348" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9628412127" green="0.90700799229999995" blue="0.85488480330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="33" id="0rs-sQ-1Tz"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="70" id="1FC-2u-F0q"/>
+                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="top" secondItem="CH6-lp-oa9" secondAttribute="top" constant="356" id="8Ft-4V-efj"/>
+                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="centerX" secondItem="QCs-Na-eRq" secondAttribute="centerX" id="9WD-rL-iJH"/>
+                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="KGx-3g-bIw" secondAttribute="bottom" constant="334" id="G8j-D3-k3e"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="top" secondItem="CH6-lp-oa9" secondAttribute="top" constant="8" id="SE9-YO-7ZG"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="top" secondItem="8IU-S2-SjC" secondAttribute="bottom" constant="59" id="Xc4-FF-qmi"/>
+                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="top" secondItem="QCs-Na-eRq" secondAttribute="bottom" constant="8" id="YP8-nL-wbq"/>
+                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="centerX" secondItem="KGx-3g-bIw" secondAttribute="centerX" id="ere-Ui-FOf"/>
+                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="39" id="l9c-cG-oWh"/>
+                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="112" id="lsJ-ld-1vD"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="centerX" secondItem="2Il-lS-YRM" secondAttribute="centerX" id="v86-TL-I6g"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="centerX" secondItem="8IU-S2-SjC" secondAttribute="centerX" id="yb9-2J-w06"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="CH6-lp-oa9"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="or2-xB-sns"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="RJG-Tu-BRE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyj-bx-UgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="-1282.3660714285713"/>
+        </scene>
         <!--More-->
         <scene sceneID="RAp-GQ-bbm">
             <objects>
@@ -254,7 +336,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Untitled-1" width="1500" height="1500"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="questionmark" catalog="system" width="96" height="128"/>
         <image name="rectangle" catalog="system" width="128" height="93"/>

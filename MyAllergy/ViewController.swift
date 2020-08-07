@@ -21,6 +21,10 @@ func mergeFood(log: Log) -> String{
     return [log.breakfast, log.lunch, log.dinner, log.otherMeals].joined(separator: ", ")
 }
 
+// labeling dir and fileURL
+let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+let fileURL = dir?.appendingPathComponent(file)
+
 //reads the JSON file out
 func loadFile(pathName: URL) -> [String: Log]{
 
@@ -65,7 +69,6 @@ let file = "allergyLogFile.json"
 class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
     
     var dateChosen = ""
-//    var symptom = ""
     var symptomList: [String] = [String]()
     
     private func configureTextFields() {
@@ -83,8 +86,42 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
     @IBOutlet weak var symptomPicker: UIPickerView!
     
     @IBOutlet weak var datePicker: UIDatePicker!
-   
+    
+    func futureDateNotAllowed() {
+        datePicker.maximumDate = Date()
+    }
+    
+    @IBAction func dateChanged(_ sender: UIDatePicker) {
+        
+        let fileExists = (try? fileURL!.checkResourceIsReachable()) ?? false
+        if fileExists {
+            let loadedLogs = loadFile(pathName: fileURL!)
+            
+            print("date change detected")
+            dateFormatter.dateStyle = DateFormatter.Style.short
+            dateChosen = dateFormatter.string(from: datePicker.date)
+            
+            print(dateChosen)
+
+            // Get the dictionary key (all existing dates) and see if it contains the chosen date
+            let existingDates = loadedLogs.keys
+            if existingDates.contains(dateChosen){
+                let oldLog = loadedLogs[dateChosen]
+                breakfastFoods.text = oldLog?.breakfast
+                lunchFoods.text = oldLog?.lunch
+                dinnerFoods.text = oldLog?.dinner
+                
+                let row = symptomList.index(of: oldLog!.symptom)
+                symptomPicker.selectRow(row!, inComponent: 0, animated: false)
+                
+            }
+        }
+        
+        
+    }
+    
     let dateFormatter = DateFormatter()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,14 +163,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         // update the log file with today's info
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
-            let fileURL = dir.appendingPathComponent(file)
-
             // create newLog and add it into existing log file
             let newLog = Log(breakfast: breakfast, lunch: lunch, dinner: dinner, otherMeals: "", symptom: symptom)
-            addEntry(pathName: fileURL, newDate: dateChosen, newLog: newLog)
+            addEntry(pathName: fileURL!, newDate: dateChosen, newLog: newLog)
 //
             // read out the new file to verify
-            let loadedLogs = loadFile(pathName: fileURL)
+            let loadedLogs = loadFile(pathName: fileURL!)
             print(loadedLogs)
         }
         

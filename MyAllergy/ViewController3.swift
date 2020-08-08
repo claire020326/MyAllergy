@@ -49,7 +49,26 @@ class ViewController3: UIViewController, UITextViewDelegate, MFMailComposeViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        configureTapGesture()
     }
+    
+    // made keyboard go away when tapped outside of a text box
+    private func configureTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    // made keyboard go away when tapped outside of a text box
+    @objc func handleTap() {
+        print("Handle tap was called")
+        view.endEditing(true)
+    }
+}
 
+// keyboard go away when tapped outside of a text box
+extension ViewController3: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

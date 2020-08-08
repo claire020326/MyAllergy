@@ -108,7 +108,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
                 dinnerFoods.text = oldLog?.dinner
                 snacksFoods.text = oldLog?.snacks
                 
-                let row = symptomList.index(of: oldLog!.symptom)
+                let row = symptomList.firstIndex(of: oldLog!.symptom)
                 symptomPicker.selectRow(row!, inComponent: 0, animated: false)
 
             }

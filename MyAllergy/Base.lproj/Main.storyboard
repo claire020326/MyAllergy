@@ -56,27 +56,30 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. milk, cereal, scrambled eggs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1GE-A2-ADe" userLabel="breakfast text box">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. cheese pizza, lettuce, tomato" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-xc-q1j" userLabel="lunch text box">
                                         <rect key="frame" x="0.0" y="98" width="374" height="58"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. mashed potatoes, steak, beans" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-oC-Ocf" userLabel="dinner text box">
                                         <rect key="frame" x="0.0" y="196" width="374" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. strawberries, lays chips" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idq-6U-GSN" userLabel="snacks text box">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="i.e. strawberries, lays chips" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idq-6U-GSN" userLabel="snacks text box">
                                         <rect key="frame" x="0.0" y="294.5" width="374" height="58"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-Lx-6uD">
@@ -198,15 +201,15 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
-                                <rect key="frame" x="54" y="285.5" width="306" height="170"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
+                                <rect key="frame" x="54" y="254" width="306" height="274"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE6-zS-hFM">
-                                <rect key="frame" x="119" y="464.5" width="176" height="64"/>
+                                <rect key="frame" x="119" y="556" width="176" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66.5" id="NUn-CM-4AN"/>
                                 </constraints>
@@ -224,11 +227,11 @@
                             <constraint firstItem="tlG-1O-8La" firstAttribute="top" secondItem="tQx-ot-w7o" secondAttribute="top" constant="127" id="1rc-mG-CMY"/>
                             <constraint firstItem="uE6-zS-hFM" firstAttribute="leading" secondItem="tQx-ot-w7o" secondAttribute="leading" constant="119" id="8WP-zh-36R"/>
                             <constraint firstItem="Dgq-xx-5vp" firstAttribute="leading" secondItem="tQx-ot-w7o" secondAttribute="leading" constant="54" id="ACt-Qh-9s2"/>
-                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="top" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="51" id="F28-9l-ZLy"/>
+                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="top" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="19.5" id="F28-9l-ZLy"/>
                             <constraint firstItem="tlG-1O-8La" firstAttribute="leading" secondItem="0Rq-m8-8jg" secondAttribute="leadingMargin" constant="-23" id="W9Z-ET-Me7"/>
-                            <constraint firstItem="uE6-zS-hFM" firstAttribute="top" secondItem="Dgq-xx-5vp" secondAttribute="bottom" constant="8" id="aYR-1C-Kmx"/>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="top" secondItem="Dgq-xx-5vp" secondAttribute="bottom" constant="27" id="aYR-1C-Kmx"/>
                             <constraint firstItem="tlG-1O-8La" firstAttribute="centerX" secondItem="0Rq-m8-8jg" secondAttribute="centerX" id="cEI-59-POn"/>
-                            <constraint firstItem="tQx-ot-w7o" firstAttribute="bottom" secondItem="uE6-zS-hFM" secondAttribute="bottom" constant="283" id="kID-fV-Dwi"/>
+                            <constraint firstItem="tQx-ot-w7o" firstAttribute="bottom" secondItem="uE6-zS-hFM" secondAttribute="bottom" constant="191.5" id="kID-fV-Dwi"/>
                             <constraint firstItem="tlG-1O-8La" firstAttribute="centerX" secondItem="Dgq-xx-5vp" secondAttribute="centerX" id="oe7-vb-6rG"/>
                             <constraint firstItem="Dgq-xx-5vp" firstAttribute="trailing" secondItem="uE6-zS-hFM" secondAttribute="trailing" constant="65" id="t29-H9-cIN"/>
                         </constraints>
@@ -275,7 +278,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
                                         <rect key="frame" x="33" y="590" width="348" height="115"/>
                                         <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -324,41 +327,77 @@
             </objects>
             <point key="canvasLocation" x="1028.985507246377" y="-1282.3660714285713"/>
         </scene>
-        <!--More-->
+        <!--Feedback-->
         <scene sceneID="RAp-GQ-bbm">
             <objects>
-                <viewController id="cRk-W1-cEn" sceneMemberID="viewController">
+                <viewController id="cRk-W1-cEn" customClass="ViewController3" customModule="MyAllergy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mcT-Pj-lwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="About Us Page" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dRA-fi-TDV">
-                                <rect key="frame" x="79" y="290" width="257" height="317"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-yi-os1">
+                                <rect key="frame" x="46" y="239" width="322" height="426"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="426" id="Ct5-4E-o2A"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give us your feedback!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-jC-IZP">
+                                <rect key="frame" x="29" y="176" width="356" height="55"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-c5-3M1">
+                                <rect key="frame" x="135" y="691" width="144" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51.5" id="EK1-sE-eM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
+                                <state key="normal" title="SUBMIT" backgroundImage="rectangle" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitTapped:" destination="cRk-W1-cEn" eventType="touchUpInside" id="0yp-OC-vEQ"/>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WnF-6v-Agk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89212399740000004" green="0.94544562990000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wMY-yi-os1" firstAttribute="leading" secondItem="DA7-LC-fe4" secondAttribute="leading" constant="46" id="KgG-sr-wTg"/>
+                            <constraint firstItem="1AB-c5-3M1" firstAttribute="top" secondItem="wMY-yi-os1" secondAttribute="bottom" constant="25" id="X8r-eo-eO1"/>
+                            <constraint firstItem="DA7-LC-fe4" firstAttribute="bottom" secondItem="1AB-c5-3M1" secondAttribute="bottom" constant="71.5" id="YI7-7G-u0i"/>
+                            <constraint firstItem="1AB-c5-3M1" firstAttribute="centerX" secondItem="wMY-yi-os1" secondAttribute="centerX" id="gvU-NR-pyQ"/>
+                            <constraint firstItem="1AB-c5-3M1" firstAttribute="centerX" secondItem="mcT-Pj-lwE" secondAttribute="centerX" id="jSH-PV-D6I"/>
+                            <constraint firstItem="1AB-c5-3M1" firstAttribute="centerX" secondItem="Oz0-jC-IZP" secondAttribute="centerX" id="kg9-TA-BnN"/>
+                            <constraint firstItem="wMY-yi-os1" firstAttribute="top" secondItem="Oz0-jC-IZP" secondAttribute="bottom" constant="8" id="rEa-8O-sjf"/>
+                            <constraint firstItem="1AB-c5-3M1" firstAttribute="leading" secondItem="DA7-LC-fe4" secondAttribute="leading" constant="135" id="ryh-fT-Irm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DA7-LC-fe4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="ellipsis" catalog="system" id="tia-vh-kjQ">
+                    <tabBarItem key="tabBarItem" title="Feedback" image="text.bubble" catalog="system" id="tia-vh-kjQ">
                         <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="feedbackView" destination="wMY-yi-os1" id="Zch-ef-QML"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Le-fat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="691"/>
+            <point key="canvasLocation" x="1028.985507246377" y="690.40178571428567"/>
         </scene>
     </scenes>
     <resources>
         <image name="Untitled-1" width="1500" height="1500"/>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="questionmark" catalog="system" width="96" height="128"/>
         <image name="rectangle" catalog="system" width="128" height="93"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
     </resources>
 </document>

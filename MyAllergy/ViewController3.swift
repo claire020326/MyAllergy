@@ -25,13 +25,15 @@ class ViewController3: UIViewController, UITextViewDelegate, MFMailComposeViewCo
     }
 
     func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Unfortunately your request could not be completed. Please try again at another time and we're very sorry for any inconvenience.", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
+        let alert = UIAlertController(title: "Error:", message: "Unfortunately your request could not be completed. Please try again at another time and we're very sorry for any inconvenience.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
     }
 
+    // MARK: MFMailComposeViewControllerDelegate Method
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
-        }
+    }
 
     @IBOutlet weak var feedbackView: UITextView!
     
@@ -50,6 +52,8 @@ class ViewController3: UIViewController, UITextViewDelegate, MFMailComposeViewCo
         super.viewDidLoad()
         
         configureTapGesture()
+        
+        overrideUserInterfaceStyle = .light
     }
     
     // made keyboard go away when tapped outside of a text box

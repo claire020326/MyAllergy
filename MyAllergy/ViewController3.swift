@@ -9,49 +9,72 @@ import UIKit
 import MessageUI
 import Foundation
 
-class ViewController3: UIViewController, UITextViewDelegate, MFMailComposeViewControllerDelegate {
-    
-    var feedback = ""
-    
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+class ViewController3: UIViewController, MFMailComposeViewControllerDelegate, UITextViewDelegate {
 
-        mailComposerVC.setToRecipients(["allergydiagnosisforall@gmail.com"])
-        mailComposerVC.setSubject("Feedback for MyAllergy App")
-        mailComposerVC.setMessageBody(feedback, isHTML: false)
-
-        return mailComposerVC
-    }
-
-    func showSendMailErrorAlert() {
-        let alert = UIAlertController(title: "Error:", message: "Unfortunately your request could not be completed. Please try again at another time and we're very sorry for any inconvenience.", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-    }
-
-    // MARK: MFMailComposeViewControllerDelegate Method
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
+//    func showSendMailErrorAlert() {
+//        let alert = UIAlertController(title: "Error:", message: "Unfortunately your request could not be completed. Please try again at another time and we're very sorry for any inconvenience.", preferredStyle: .alert)
+//
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//    }
 
     @IBOutlet weak var feedbackView: UITextView!
     
+    @IBOutlet weak var subjectView: UITextView!
+    
     @IBAction func submitTapped(_ sender: UIButton) {
-        feedback = feedbackView.text!
         
-        let mailComposeViewController = configuredMailComposeViewController()
-            if MFMailComposeViewController.canSendMail() {
-                self.present(mailComposeViewController, animated: true, completion: nil)
-            } else {
-                self.showSendMailErrorAlert()
-            }
+        if subjectView.text == nil {
+            let subjectAlert = UIAlertController(title: "Subject Error:", message: "Unfortunately your message cannot be sent with an empty subject. Please fill in the subject box.", preferredStyle: .alert)
+
+            subjectAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        }
+        
+        let picker = MFMailComposeViewController()
+        picker.mailComposeDelegate = self
+            
+        if let subjectText = subjectView.text {
+            picker.setSubject(subjectText)
+        }
+        picker.setMessageBody(feedbackView.text, isHTML: true)
+    }
+    
+    func mailComposeViewController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+         dismiss(animated: true, completion: nil)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+            
+        return true
+    }
+   
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        feedbackView.text = textView.text
+            
+        if text == "\n" {
+            textView.resignFirstResponder()
+                
+            return false
+        }
+        return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        feedbackView.delegate = self
+        
         configureTapGesture()
+        
+        // adding border to feedback text view
+        self.feedbackView.layer.borderWidth = 2
+        self.feedbackView.layer.borderColor = UIColor.gray.cgColor
+        self.feedbackView.layer.cornerRadius = 6
+        
+        // adding border to subject text view
+        self.subjectView.layer.borderWidth = 2
+        self.subjectView.layer.borderColor = UIColor.gray.cgColor
+        self.subjectView.layer.cornerRadius = 6
         
         overrideUserInterfaceStyle = .light
     }
@@ -71,7 +94,7 @@ class ViewController3: UIViewController, UITextViewDelegate, MFMailComposeViewCo
 
 // keyboard go away when tapped outside of a text box
 extension ViewController3: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    private func textFieldShouldReturnVC3(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

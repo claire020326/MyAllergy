@@ -66,7 +66,7 @@ extension String {
 
 let file = "allergyLogFile.json"
 
-class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextViewDelegate {
     
     var dateChosen = ""
     var symptomList: [String] = [String]()
@@ -78,13 +78,13 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
          snacksFoods.delegate = self
      }
     
-    @IBOutlet weak var breakfastFoods: UITextField!
+    @IBOutlet weak var breakfastFoods: UITextView!
     
-    @IBOutlet weak var lunchFoods: UITextField!
+    @IBOutlet weak var lunchFoods: UITextView!
     
-    @IBOutlet weak var dinnerFoods: UITextField!
+    @IBOutlet weak var dinnerFoods: UITextView!
     
-    @IBOutlet weak var snacksFoods: UITextField!
+    @IBOutlet weak var snacksFoods: UITextView!
     
     @IBOutlet weak var symptomPicker: UIPickerView!
     
@@ -114,7 +114,63 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
             }
         }
     }
-    
+//
+//    // placeholder for breakfast text view
+//    func breakfastTextViewDidBeginEditing(_ textView: UITextView) {
+//        if breakfastFoods.textColor == UIColor.lightGray {
+//            breakfastFoods.text = ""
+//            breakfastFoods.textColor = UIColor.black
+//        }
+//    }
+//    func breakfastTextViewDidEndEditing(_ textView: UITextView) {
+//        if breakfastFoods.text == "" {
+//            breakfastFoods.text = "i.e. egg, milk, cereal, bread"
+//            breakfastFoods.textColor = UIColor.lightGray
+//        }
+//    }
+//
+//    // placeholder for lunch text view
+//    func lunchTextViewDidBeginEditing(_ textView: UITextView) {
+//        if lunchFoods.textColor == UIColor.lightGray {
+//            lunchFoods.text = ""
+//            lunchFoods.textColor = UIColor.black
+//        }
+//    }
+//    func lunchTextViewDidEndEditing(_ textView: UITextView) {
+//        if lunchFoods.text == "" {
+//            lunchFoods.text = "i.e. spaghetti, tomato, meatball"
+//            lunchFoods.textColor = UIColor.lightGray
+//        }
+//    }
+//
+//    // placeholder for dinner text view
+//    func dinnerTextViewDidBeginEditing(_ textView: UITextView) {
+//        if dinnerFoods.textColor == UIColor.lightGray {
+//            dinnerFoods.text = ""
+//            dinnerFoods.textColor = UIColor.black
+//        }
+//    }
+//    func dinnerTextViewDidEndEditing(_ textView: UITextView) {
+//        if dinnerFoods.text == "" {
+//            dinnerFoods.text = "i.e. potato, steak, gravy, beans, carrot"
+//            dinnerFoods.textColor = UIColor.lightGray
+//        }
+//    }
+//
+//    // placeholder for snacks text view
+//    func snacksTextViewDidBeginEditing(_ textView: UITextView) {
+//        if snacksFoods.textColor == UIColor.lightGray {
+//            snacksFoods.text = ""
+//            snacksFoods.textColor = UIColor.black
+//        }
+//    }
+//    func snacksTextViewDidEndEditing(_ textView: UITextView) {
+//        if snacksFoods.text == "" {
+//            snacksFoods.text = "i.e. strawberry, blueberry, potato chips"
+//            snacksFoods.textColor = UIColor.lightGray
+//        }
+//    }
+
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -122,6 +178,49 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIPickerViewDelega
         
         configureTapGesture()
         configureTextFields()
+        
+        // adding borders to text views
+        self.breakfastFoods.layer.borderWidth = 2
+        self.breakfastFoods.layer.borderColor = UIColor.gray.cgColor
+        self.breakfastFoods.layer.cornerRadius = 6
+        
+        self.lunchFoods.layer.borderWidth = 2
+        self.lunchFoods.layer.borderColor = UIColor.gray.cgColor
+        self.lunchFoods.layer.cornerRadius = 6
+        
+        self.dinnerFoods.layer.borderWidth = 2
+        self.dinnerFoods.layer.borderColor = UIColor.gray.cgColor
+        self.dinnerFoods.layer.cornerRadius = 6
+        
+        self.snacksFoods.layer.borderWidth = 2
+        self.snacksFoods.layer.borderColor = UIColor.gray.cgColor
+        self.snacksFoods.layer.cornerRadius = 6
+        
+//        // placeholders for the foods text view
+//        breakfastFoods.delegate = self
+//        breakfastFoods.text = "i.e. egg, milk, cereal, bread"
+//        breakfastFoods.textColor = UIColor.lightGray
+//        lunchFoods.delegate = self
+//        lunchFoods.text = "i.e. spaghetti, tomato, meatball"
+//        lunchFoods.textColor = UIColor.lightGray
+//        dinnerFoods.delegate = self
+//        dinnerFoods.text = "i.e. potato, steak, gravy, beans, carrot"
+//        dinnerFoods.textColor = UIColor.lightGray
+//        snacksFoods.delegate = self
+//        snacksFoods.text = "i.e. strawberry, blueberry, potato chips"
+//        snacksFoods.textColor = UIColor.lightGray
+//
+//        breakfastTextViewDidBeginEditing(breakfastFoods)
+//        breakfastTextViewDidEndEditing(breakfastFoods)
+//
+//        lunchTextViewDidBeginEditing(lunchFoods)
+//        lunchTextViewDidEndEditing(lunchFoods)
+//
+//        dinnerTextViewDidBeginEditing(dinnerFoods)
+//        dinnerTextViewDidEndEditing(dinnerFoods)
+//
+//        snacksTextViewDidBeginEditing(snacksFoods)
+//        snacksTextViewDidEndEditing(snacksFoods)
         
         symptomList = ["good", "ok", "bad", "terrible"]
         

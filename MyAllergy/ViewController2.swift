@@ -15,10 +15,10 @@ class ViewController2: UIViewController, UITextViewDelegate {
     var fullLogStr = ""
     
     private func configureTextView() {
-        allergensTextView.delegate = self
+        allergensView.delegate = self
     }
     
-    @IBOutlet weak var allergensTextView: UITextView!
+    @IBOutlet weak var allergensView: UITextView!
     
     @IBAction func predictTapped(_ sender: UIButton) {
         
@@ -93,11 +93,16 @@ class ViewController2: UIViewController, UITextViewDelegate {
             }
         }
 
-        allergensTextView.text = allergens.joined(separator: "\n")
+        allergensView.text = allergens.joined(separator: "\n")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // adding border to allergens text view
+        self.allergensView.layer.borderWidth = 2
+        self.allergensView.layer.borderColor = UIColor.gray.cgColor
+        self.allergensView.layer.cornerRadius = 6
         
         overrideUserInterfaceStyle = .light
     }

@@ -38,7 +38,7 @@ class ViewController3: UIViewController, MFMailComposeViewControllerDelegate, UI
         picker.setMessageBody(feedbackView.text, isHTML: true)
     }
     
-    func mailComposeViewController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
          dismiss(animated: true, completion: nil)
     }
 

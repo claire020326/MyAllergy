@@ -15,75 +15,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-9l-Mqm">
-                                <rect key="frame" x="20" y="233" width="394" height="29.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-9l-Mqm">
+                                <rect key="frame" x="20" y="233.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de2-4t-Sor">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de2-4t-Sor">
                                 <rect key="frame" x="20" y="330" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWv-o4-ktq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWv-o4-ktq">
                                 <rect key="frame" x="20" y="428.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snacks/ Other Meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-01-mjb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Snacks/ Other Meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-01-mjb">
                                 <rect key="frame" x="20" y="528" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Symptoms Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-yb-aaJ" userLabel="Symptoms">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Pick a Symptoms Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-yb-aaJ" userLabel="Symptoms">
                                 <rect key="frame" x="20" y="626.5" width="394" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Food Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9f-hO-hBj">
-                                <rect key="frame" x="100" y="59" width="214" height="63"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-ED-b2c">
-                                <rect key="frame" x="20" y="263" width="374" height="450"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-ED-b2c">
+                                <rect key="frame" x="20" y="263.5" width="374" height="449.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-Mx-SDW" userLabel="breakfast text view">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-Mx-SDW" userLabel="breakfast text view">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-mL-Jys" userLabel="lunch text view">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-mL-Jys" userLabel="lunch text view">
                                         <rect key="frame" x="0.0" y="98" width="374" height="58"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-HM-a0Y" userLabel="dinner text view">
-                                        <rect key="frame" x="0.0" y="196" width="374" height="58"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-HM-a0Y" userLabel="dinner text view">
+                                        <rect key="frame" x="0.0" y="196" width="374" height="57.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-BQ-eN2" userLabel="snacks text view">
-                                        <rect key="frame" x="0.0" y="294" width="374" height="58"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-BQ-eN2" userLabel="snacks text view">
+                                        <rect key="frame" x="0.0" y="293.5" width="374" height="58"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-Lx-6uD">
-                                        <rect key="frame" x="0.0" y="392" width="374" height="58"/>
+                                    <pickerView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-Lx-6uD">
+                                        <rect key="frame" x="0.0" y="391.5" width="374" height="58"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="rDK-6m-J2A"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="qNC-8Y-rI1"/>
@@ -91,8 +85,8 @@
                                     </pickerView>
                                 </subviews>
                             </stackView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-pV-f7c">
-                                <rect key="frame" x="0.0" y="115" width="414" height="109"/>
+                            <datePicker contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-pV-f7c">
+                                <rect key="frame" x="0.0" y="115" width="508" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="109" id="03Z-q9-pqy"/>
                                 </constraints>
@@ -100,7 +94,7 @@
                                     <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0v4-w8-80j"/>
                                 </connections>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZg-BC-imz">
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZg-BC-imz">
                                 <rect key="frame" x="129" y="749" width="156" height="52"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
                                 <state key="normal" title="SUBMIT" backgroundImage="rectangle" catalog="system">
@@ -111,23 +105,29 @@
                                     <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjj-C6-XsZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Daily Food Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9f-hO-hBj">
+                                <rect key="frame" x="110" y="57" width="214" height="63.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89212399743820314" green="0.94544562987178982" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="R9f-hO-hBj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="19a-jN-Jfa"/>
+                            <constraint firstItem="R9f-hO-hBj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="19a-jN-Jfa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="de2-4t-Sor" secondAttribute="trailing" id="2LM-I6-Dj7"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2pK-QF-fIx"/>
                             <constraint firstItem="sZg-BC-imz" firstAttribute="centerX" secondItem="HSa-ED-b2c" secondAttribute="centerX" id="7te-1A-XUL"/>
-                            <constraint firstItem="R9f-hO-hBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AqA-dD-hKd"/>
+                            <constraint firstItem="R9f-hO-hBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="AqA-dD-hKd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSa-ED-b2c" secondAttribute="trailing" constant="20" id="B4r-mF-h7K"/>
                             <constraint firstItem="dbx-01-mjb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="528" id="BPy-wC-5wG"/>
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CPv-U5-0nP"/>
-                            <constraint firstItem="hsU-9l-Mqm" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="111" id="Cfb-mV-ZYs"/>
+                            <constraint firstItem="hsU-9l-Mqm" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="113" id="Cfb-mV-ZYs"/>
                             <constraint firstItem="de2-4t-Sor" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="330" id="GSe-xU-3N1"/>
                             <constraint firstItem="sZg-BC-imz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="Jx3-FB-zzw"/>
                             <constraint firstItem="sZg-BC-imz" firstAttribute="top" secondItem="HSa-ED-b2c" secondAttribute="bottom" constant="35" id="S05-SP-oTv"/>
                             <constraint firstItem="dbx-01-mjb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="c8r-MC-58l"/>
-                            <constraint firstItem="R9f-hO-hBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="cFa-a0-kpc"/>
+                            <constraint firstItem="R9f-hO-hBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="cFa-a0-kpc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HSa-ED-b2c" secondAttribute="bottom" constant="100" id="h6F-Z3-Qhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rWv-o4-ktq" secondAttribute="bottom" constant="355" id="hec-c6-wTW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rWv-o4-ktq" secondAttribute="trailing" id="i9s-gn-ka4"/>
@@ -138,7 +138,7 @@
                             <constraint firstItem="HSa-ED-b2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nnp-1Q-oE3"/>
                             <constraint firstItem="de2-4t-Sor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ofA-Wt-tcs"/>
                             <constraint firstAttribute="trailing" secondItem="rRL-yb-aaJ" secondAttribute="trailing" id="owz-1q-UHa"/>
-                            <constraint firstItem="HSa-ED-b2c" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="141" id="rKY-il-zGX"/>
+                            <constraint firstItem="HSa-ED-b2c" firstAttribute="top" secondItem="R9f-hO-hBj" secondAttribute="bottom" constant="143" id="rKY-il-zGX"/>
                             <constraint firstItem="fBS-pV-f7c" firstAttribute="trailing" secondItem="hsU-9l-Mqm" secondAttribute="trailing" id="raX-Nj-71r"/>
                             <constraint firstAttribute="trailing" secondItem="de2-4t-Sor" secondAttribute="trailing" id="sNN-2W-cn2"/>
                             <constraint firstAttribute="trailing" secondItem="dbx-01-mjb" secondAttribute="trailing" id="sSL-vL-Yue"/>
@@ -179,7 +179,7 @@
                         <segue destination="OzE-kM-jNw" kind="relationship" relationship="viewControllers" id="032-Bd-awM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Y7I-1J-Dcq"/>
                         <segue destination="isy-4Z-btz" kind="relationship" relationship="viewControllers" id="gS1-AX-sAW"/>
-                        <segue destination="cRk-W1-cEn" kind="relationship" relationship="viewControllers" id="qeo-7k-ihj"/>
+                        <segue destination="grk-Pk-nuG" kind="relationship" relationship="viewControllers" id="kiW-ez-lfI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkb-8c-B6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -194,20 +194,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible Allergens:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-1O-8La">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Possible Allergens:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-1O-8La">
                                 <rect key="frame" x="-3" y="59" width="420" height="63"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
                                 <rect key="frame" x="20" y="141.5" width="374" height="386.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE6-zS-hFM">
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE6-zS-hFM">
                                 <rect key="frame" x="112" y="554" width="190" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66.5" id="NUn-CM-4AN"/>
@@ -255,64 +255,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="2Il-lS-YRM">
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Il-lS-YRM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="KGx-3g-bIw">
-                                        <rect key="frame" x="70" y="52" width="274" height="427"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="KGx-3g-bIw">
+                                        <rect key="frame" x="70" y="74" width="274" height="334.5"/>
+                                        <viewLayoutGuide key="safeArea" id="OUR-Xs-dIA"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCs-Na-eRq">
-                                        <rect key="frame" x="90.5" y="400" width="233.5" height="96"/>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
-                                        <color key="textColor" red="0.3732037842" green="0.5447500944" blue="0.55686444040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-S2-SjC">
-                                        <rect key="frame" x="39" y="504" width="336" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="ney-BY-bUQ"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-S2-SjC">
+                                        <rect key="frame" x="41.5" y="506.5" width="331" height="24.5"/>
+                                        <viewLayoutGuide key="safeArea" id="oWD-mU-6rl"/>
                                         <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
-                                        <rect key="frame" x="33" y="590" width="348" height="115"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" text="* This application is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="buS-IM-bnO">
+                                        <rect key="frame" x="33" y="745" width="348" height="42"/>
+                                        <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <viewLayoutGuide key="safeArea" id="4AQ-fG-lSq"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCs-Na-eRq">
+                                        <rect key="frame" x="90" y="416.5" width="234" height="63.5"/>
+                                        <viewLayoutGuide key="safeArea" id="6Sc-l9-Axz"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                        <color key="textColor" red="0.3732037842" green="0.5447500944" blue="0.55686444040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04T-gb-MuW">
+                                        <rect key="frame" x="33" y="589" width="348" height="115"/>
                                         <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="115" id="vAz-9k-9b1"/>
+                                            <constraint firstAttribute="height" constant="115" id="2CR-Ct-M9B"/>
                                         </constraints>
+                                        <viewLayoutGuide key="safeArea" id="62e-E6-aNR"/>
                                         <string key="text">Instructions: Enter in all the ingredients of each meal that you eat in a day. Include drinks, fruits, and desserts! Please separate the ingredients with ", "</string>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="* This application is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="buS-IM-bnO">
-                                        <rect key="frame" x="33" y="771" width="348" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.95350174499999996" green="0.90642718929999999" blue="0.86000928629999995" alpha="0.99079623289999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9628412127" green="0.90700799229999995" blue="0.85488480330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="04T-gb-MuW" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="33" id="0rs-sQ-1Tz"/>
-                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="70" id="1FC-2u-F0q"/>
-                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="top" secondItem="CH6-lp-oa9" secondAttribute="top" constant="356" id="8Ft-4V-efj"/>
-                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="centerX" secondItem="QCs-Na-eRq" secondAttribute="centerX" id="9WD-rL-iJH"/>
-                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="KGx-3g-bIw" secondAttribute="bottom" constant="334" id="G8j-D3-k3e"/>
-                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="top" secondItem="CH6-lp-oa9" secondAttribute="top" constant="8" id="SE9-YO-7ZG"/>
-                                    <constraint firstItem="04T-gb-MuW" firstAttribute="top" secondItem="8IU-S2-SjC" secondAttribute="bottom" constant="59" id="Xc4-FF-qmi"/>
-                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="top" secondItem="QCs-Na-eRq" secondAttribute="bottom" constant="8" id="YP8-nL-wbq"/>
-                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="centerX" secondItem="KGx-3g-bIw" secondAttribute="centerX" id="ere-Ui-FOf"/>
-                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="39" id="l9c-cG-oWh"/>
-                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="108" id="lsJ-ld-1vD"/>
-                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="centerX" secondItem="2Il-lS-YRM" secondAttribute="centerX" id="v86-TL-I6g"/>
-                                    <constraint firstItem="04T-gb-MuW" firstAttribute="centerX" secondItem="8IU-S2-SjC" secondAttribute="centerX" id="yb9-2J-w06"/>
+                                    <constraint firstItem="buS-IM-bnO" firstAttribute="top" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="41" id="6Ay-n0-Ejh"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="leading" secondItem="buS-IM-bnO" secondAttribute="leading" id="6fe-ZR-w0Y"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="centerX" secondItem="2Il-lS-YRM" secondAttribute="centerX" id="7Zb-ZS-h5M"/>
+                                    <constraint firstItem="CH6-lp-oa9" firstAttribute="bottom" secondItem="buS-IM-bnO" secondAttribute="bottom" constant="26" id="7xa-1n-XQS"/>
+                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="top" secondItem="KGx-3g-bIw" secondAttribute="bottom" constant="8" id="IkF-pR-EVj"/>
+                                    <constraint firstItem="buS-IM-bnO" firstAttribute="centerX" secondItem="CH6-lp-oa9" secondAttribute="centerX" id="Mcr-BO-DIO"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="33" id="NOm-TT-rSc"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="centerX" secondItem="CH6-lp-oa9" secondAttribute="centerX" id="Rcb-EY-KJZ"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="top" secondItem="CH6-lp-oa9" secondAttribute="top" constant="30" id="TZQ-bn-1YI"/>
+                                    <constraint firstItem="8IU-S2-SjC" firstAttribute="centerX" secondItem="CH6-lp-oa9" secondAttribute="centerX" id="UC2-Kn-dYu"/>
+                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="centerX" secondItem="CH6-lp-oa9" secondAttribute="centerX" id="Urr-oz-6lQ"/>
+                                    <constraint firstItem="04T-gb-MuW" firstAttribute="top" secondItem="8IU-S2-SjC" secondAttribute="bottom" constant="58" id="V7i-uM-2J4"/>
+                                    <constraint firstAttribute="bottom" secondItem="04T-gb-MuW" secondAttribute="bottom" constant="192" id="bm6-8e-xYc"/>
+                                    <constraint firstItem="KGx-3g-bIw" firstAttribute="leading" secondItem="CH6-lp-oa9" secondAttribute="leading" constant="70" id="evL-za-ck7"/>
+                                    <constraint firstItem="QCs-Na-eRq" firstAttribute="centerY" secondItem="2Il-lS-YRM" secondAttribute="centerY" id="i6Y-Jp-kL6"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="CH6-lp-oa9"/>
                             </view>
@@ -335,7 +338,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-yi-os1">
-                                <rect key="frame" x="20" y="317" width="374" height="347"/>
+                                <rect key="frame" x="20" y="366" width="374" height="347"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="347" id="Ct5-4E-o2A"/>
@@ -364,7 +367,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-c5-3M1">
-                                <rect key="frame" x="135" y="691" width="156" height="52"/>
+                                <rect key="frame" x="135" y="740" width="156" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54.5" id="8Rq-9u-jD2"/>
                                 </constraints>
@@ -425,12 +428,104 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggp-Le-fat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.985507246377" y="690.40178571428567"/>
+            <point key="canvasLocation" x="2746" y="359"/>
+        </scene>
+        <!--Info.-->
+        <scene sceneID="5aU-ls-5G7">
+            <objects>
+                <viewController id="grk-Pk-nuG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Do7-QK-Uz8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="2Qk-gs-pBj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBk-s5-Lfr">
+                                        <rect key="frame" x="20" y="714" width="374" height="88"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="yt7-dU-jdu"/>
+                                        </constraints>
+                                        <string key="text">DISCLAIMER: MyAllergy is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition. Therefore, Myallergy takes no responsibility for any misdiagnosis or their consequences.</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" text="allergydiagnosisforall@gmail.com" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-ls-b2x">
+                                        <rect key="frame" x="31" y="537" width="352" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tmx-dF-dAe"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="More Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ3-eb-lst">
+                                        <rect key="frame" x="86" y="52" width="242" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="gB6-eX-CrW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-RD-xGp">
+                                        <rect key="frame" x="40" y="389" width="334" height="140"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="iCa-Nv-vbS"/>
+                                        </constraints>
+                                        <string key="text">We highly value your suggestions and feedback! If you have any input for future additions or changes you'd like to see in MyAllergy, please send an email to us at:</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-wY-mEx">
+                                        <rect key="frame" x="113" y="158" width="188" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="5c4-fz-N0p"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89212399740000004" green="0.94544562990000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="top" secondItem="lJ3-eb-lst" secondAttribute="bottom" constant="44" id="2j8-Dn-N4w"/>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="2Qk-gs-pBj" secondAttribute="centerX" id="8P5-bk-xWr"/>
+                                    <constraint firstItem="6Yx-vm-OpI" firstAttribute="bottom" secondItem="YBk-s5-Lfr" secondAttribute="bottom" constant="11" id="93Z-5V-OHH"/>
+                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="leading" secondItem="YBk-s5-Lfr" secondAttribute="leading" constant="20" id="BFf-Ym-n6v"/>
+                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="leading" secondItem="6Yx-vm-OpI" secondAttribute="leading" constant="86" id="CPk-KI-I6q"/>
+                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="centerX" secondItem="Ubz-ls-b2x" secondAttribute="centerX" id="DMO-7M-qgW"/>
+                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="top" secondItem="m4n-wY-mEx" secondAttribute="bottom" constant="41" id="Esa-h8-P1o"/>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="fBd-RD-xGp" secondAttribute="centerX" id="L9K-wu-jpe"/>
+                                    <constraint firstItem="Ubz-ls-b2x" firstAttribute="leading" secondItem="6Yx-vm-OpI" secondAttribute="leading" constant="31" id="NwD-Dq-K2h"/>
+                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="top" secondItem="2Qk-gs-pBj" secondAttribute="topMargin" id="P2o-Vh-ix5"/>
+                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="leading" secondItem="6Yx-vm-OpI" secondAttribute="leading" constant="40" id="XXa-Vw-dt8"/>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="YBk-s5-Lfr" secondAttribute="centerX" id="bAP-tu-Jgz"/>
+                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="centerX" secondItem="m4n-wY-mEx" secondAttribute="centerX" id="ck1-YZ-tgt"/>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="Ubz-ls-b2x" secondAttribute="centerX" id="m2h-Ew-ScP"/>
+                                    <constraint firstItem="Ubz-ls-b2x" firstAttribute="top" secondItem="fBd-RD-xGp" secondAttribute="bottom" constant="8" id="uiu-SQ-5DH"/>
+                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="leading" secondItem="6Yx-vm-OpI" secondAttribute="leading" constant="113" id="zFc-iO-1SX"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="6Yx-vm-OpI"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JCU-Jj-qsP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info." image="info.circle" catalog="system" id="GRT-cZ-ksd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TV-wS-hVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027.536231884058" y="743.30357142857144"/>
         </scene>
     </scenes>
     <resources>
         <image name="Untitled-1" width="1500" height="1500"/>
         <image name="house" catalog="system" width="128" height="110"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="questionmark" catalog="system" width="96" height="128"/>
         <image name="rectangle" catalog="system" width="128" height="93"/>

@@ -220,23 +220,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Possible Allergens:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-1O-8La">
-                                <rect key="frame" x="-7" y="15" width="389" height="63"/>
+                                <rect key="frame" x="5" y="10" width="375" height="63"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgq-xx-5vp">
-                                <rect key="frame" x="20" y="97.5" width="335" height="235.5"/>
+                                <rect key="frame" x="10" y="97.5" width="355" height="235.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235.5" id="HMN-U2-2gt"/>
+                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE6-zS-hFM">
-                                <rect key="frame" x="112" y="359" width="151" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66.5" id="NUn-CM-4AN"/>
-                                </constraints>
+                                <rect key="frame" x="112" y="359" width="151" height="55"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="25"/>
                                 <state key="normal" title="PREDICT" backgroundImage="rectangle" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,16 +248,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89212399740000004" green="0.94544562990000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="tlG-1O-8La" firstAttribute="top" secondItem="apx-eK-6ai" secondAttribute="top" constant="15" id="1rc-mG-CMY"/>
-                            <constraint firstItem="uE6-zS-hFM" firstAttribute="leading" secondItem="apx-eK-6ai" secondAttribute="leading" constant="112" id="8WP-zh-36R"/>
-                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="leading" secondItem="apx-eK-6ai" secondAttribute="leading" constant="20" id="ACt-Qh-9s2"/>
-                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="top" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="19.5" id="F28-9l-ZLy"/>
-                            <constraint firstItem="tlG-1O-8La" firstAttribute="leading" secondItem="0Rq-m8-8jg" secondAttribute="leadingMargin" constant="-23" id="W9Z-ET-Me7"/>
-                            <constraint firstItem="uE6-zS-hFM" firstAttribute="top" secondItem="Dgq-xx-5vp" secondAttribute="bottom" constant="25" id="aYR-1C-Kmx"/>
-                            <constraint firstItem="tlG-1O-8La" firstAttribute="centerX" secondItem="apx-eK-6ai" secondAttribute="centerX" id="cEI-59-POn"/>
-                            <constraint firstItem="apx-eK-6ai" firstAttribute="bottom" secondItem="uE6-zS-hFM" secondAttribute="bottom" constant="193.5" id="kID-fV-Dwi"/>
-                            <constraint firstItem="tlG-1O-8La" firstAttribute="centerX" secondItem="Dgq-xx-5vp" secondAttribute="centerX" id="oe7-vb-6rG"/>
-                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="trailing" secondItem="uE6-zS-hFM" secondAttribute="trailing" constant="92" id="t29-H9-cIN"/>
+                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="top" secondItem="tlG-1O-8La" secondAttribute="bottom" constant="24.5" id="3gZ-e0-FUP"/>
+                            <constraint firstItem="Dgq-xx-5vp" firstAttribute="leading" secondItem="apx-eK-6ai" secondAttribute="leading" constant="10" id="5nY-e6-MPh"/>
+                            <constraint firstItem="tlG-1O-8La" firstAttribute="leading" secondItem="apx-eK-6ai" secondAttribute="leading" constant="5" id="CN8-iw-rlr"/>
+                            <constraint firstItem="tlG-1O-8La" firstAttribute="trailing" secondItem="apx-eK-6ai" secondAttribute="trailing" constant="5" id="F9T-T5-Dda"/>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="top" secondItem="Dgq-xx-5vp" secondAttribute="bottom" constant="25" id="Ko4-QB-yso"/>
+                            <constraint firstItem="apx-eK-6ai" firstAttribute="trailing" secondItem="uE6-zS-hFM" secondAttribute="trailing" constant="112" id="LYN-sP-N8t"/>
+                            <constraint firstItem="tlG-1O-8La" firstAttribute="top" secondItem="apx-eK-6ai" secondAttribute="top" constant="10" id="RZP-hJ-maU"/>
+                            <constraint firstItem="apx-eK-6ai" firstAttribute="trailing" secondItem="Dgq-xx-5vp" secondAttribute="trailing" constant="10" id="mhN-9v-Ucw"/>
+                            <constraint firstItem="uE6-zS-hFM" firstAttribute="leading" secondItem="apx-eK-6ai" secondAttribute="leading" constant="112" id="q5R-fW-ArO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="apx-eK-6ai"/>
                     </view>
@@ -467,80 +466,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="2Qk-gs-pBj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBk-s5-Lfr">
-                                        <rect key="frame" x="20" y="568" width="335" height="88"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="88" id="yt7-dU-jdu"/>
-                                        </constraints>
-                                        <string key="text">DISCLAIMER: MyAllergy is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition. Therefore, Myallergy takes no responsibility for any misdiagnosis or their consequences.</string>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" text="allergydiagnosisforall@gmail.com" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-ls-b2x">
-                                        <rect key="frame" x="31" y="493" width="313" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="tmx-dF-dAe"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="More Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ3-eb-lst">
-                                        <rect key="frame" x="86" y="8" width="203" height="62"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="gB6-eX-CrW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-RD-xGp">
-                                        <rect key="frame" x="40" y="345" width="295" height="140"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="iCa-Nv-vbS"/>
-                                        </constraints>
-                                        <string key="text">We highly value your suggestions and feedback! If you have any input for future additions or changes you'd like to see in MyAllergy, please send an email to us at:</string>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-wY-mEx">
-                                        <rect key="frame" x="113" y="114" width="149" height="190"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="190" id="5c4-fz-N0p"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.89212399740000004" green="0.94544562990000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="More Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ3-eb-lst">
+                                <rect key="frame" x="10" y="10" width="355" height="62"/>
                                 <constraints>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="top" secondItem="lJ3-eb-lst" secondAttribute="bottom" constant="44" id="2j8-Dn-N4w"/>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="2Qk-gs-pBj" secondAttribute="centerX" id="8P5-bk-xWr"/>
-                                    <constraint firstAttribute="bottom" secondItem="YBk-s5-Lfr" secondAttribute="bottom" constant="11" id="93Z-5V-OHH"/>
-                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="leading" secondItem="YBk-s5-Lfr" secondAttribute="leading" constant="20" id="BFf-Ym-n6v"/>
-                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="leading" secondItem="2Qk-gs-pBj" secondAttribute="leading" constant="86" id="CPk-KI-I6q"/>
-                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="centerX" secondItem="Ubz-ls-b2x" secondAttribute="centerX" id="DMO-7M-qgW"/>
-                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="top" secondItem="m4n-wY-mEx" secondAttribute="bottom" constant="41" id="Esa-h8-P1o"/>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="fBd-RD-xGp" secondAttribute="centerX" id="L9K-wu-jpe"/>
-                                    <constraint firstItem="Ubz-ls-b2x" firstAttribute="leading" secondItem="2Qk-gs-pBj" secondAttribute="leading" constant="31" id="NwD-Dq-K2h"/>
-                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="top" secondItem="2Qk-gs-pBj" secondAttribute="topMargin" id="P2o-Vh-ix5"/>
-                                    <constraint firstItem="fBd-RD-xGp" firstAttribute="leading" secondItem="2Qk-gs-pBj" secondAttribute="leading" constant="40" id="XXa-Vw-dt8"/>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="YBk-s5-Lfr" secondAttribute="centerX" id="bAP-tu-Jgz"/>
-                                    <constraint firstItem="lJ3-eb-lst" firstAttribute="centerX" secondItem="m4n-wY-mEx" secondAttribute="centerX" id="ck1-YZ-tgt"/>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="Ubz-ls-b2x" secondAttribute="centerX" id="m2h-Ew-ScP"/>
-                                    <constraint firstItem="Ubz-ls-b2x" firstAttribute="top" secondItem="fBd-RD-xGp" secondAttribute="bottom" constant="8" id="uiu-SQ-5DH"/>
-                                    <constraint firstItem="m4n-wY-mEx" firstAttribute="leading" secondItem="2Qk-gs-pBj" secondAttribute="leading" constant="113" id="zFc-iO-1SX"/>
+                                    <constraint firstAttribute="height" constant="62" id="gB6-eX-CrW"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-wY-mEx" userLabel="Image View">
+                                <rect key="frame" x="113" y="82" width="149" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="5c4-fz-N0p"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="UrF-gc-5nN"/>
+                                    <constraint firstAttribute="width" constant="149" id="dgF-qf-WG2"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-RD-xGp" userLabel="Description View">
+                                <rect key="frame" x="20" y="282" width="335" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="iCa-Nv-vbS"/>
+                                </constraints>
+                                <string key="text">We highly value your suggestions and feedback! If you have any input for future additions or changes you'd like to see in MyAllergy, please send an email to us at:</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" text="allergydiagnosisforall@gmail.com" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-ls-b2x" userLabel="Email view">
+                                <rect key="frame" x="31" y="432" width="313" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tmx-dF-dAe"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBk-s5-Lfr" userLabel="Disclaimer View">
+                                <rect key="frame" x="20" y="492" width="335" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="yt7-dU-jdu"/>
+                                </constraints>
+                                <string key="text">DISCLAIMER: MyAllergy is not meant to be used as a replacement for professional diagnoses by allergists, rather as an addition. Therefore, Myallergy takes no responsibility for any misdiagnosis or their consequences.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="02G-wS-fjU" firstAttribute="trailing" secondItem="fBd-RD-xGp" secondAttribute="trailing" constant="20" id="0uB-u9-PYB"/>
+                            <constraint firstItem="02G-wS-fjU" firstAttribute="trailing" secondItem="YBk-s5-Lfr" secondAttribute="trailing" constant="20" id="EIE-Lj-rGr"/>
+                            <constraint firstItem="Ubz-ls-b2x" firstAttribute="top" secondItem="fBd-RD-xGp" secondAttribute="bottom" constant="10" id="EcL-YQ-KW6"/>
+                            <constraint firstItem="m4n-wY-mEx" firstAttribute="centerX" secondItem="Do7-QK-Uz8" secondAttribute="centerX" id="FaT-Wu-89u"/>
+                            <constraint firstItem="lJ3-eb-lst" firstAttribute="leading" secondItem="02G-wS-fjU" secondAttribute="leading" constant="10" id="GtY-tT-Sik"/>
+                            <constraint firstItem="YBk-s5-Lfr" firstAttribute="top" secondItem="Ubz-ls-b2x" secondAttribute="bottom" constant="10" id="Idc-b1-abe"/>
+                            <constraint firstItem="lJ3-eb-lst" firstAttribute="top" secondItem="02G-wS-fjU" secondAttribute="top" constant="10" id="bhU-hW-qUx"/>
+                            <constraint firstItem="m4n-wY-mEx" firstAttribute="top" secondItem="lJ3-eb-lst" secondAttribute="bottom" constant="10" id="ece-jm-i70"/>
+                            <constraint firstItem="fBd-RD-xGp" firstAttribute="leading" secondItem="02G-wS-fjU" secondAttribute="leading" constant="20" id="hth-i2-jkd"/>
+                            <constraint firstItem="Ubz-ls-b2x" firstAttribute="leading" secondItem="02G-wS-fjU" secondAttribute="leading" constant="31" id="rWl-Lo-lWo"/>
+                            <constraint firstItem="fBd-RD-xGp" firstAttribute="top" secondItem="m4n-wY-mEx" secondAttribute="bottom" constant="10" id="t4G-tI-FbZ"/>
+                            <constraint firstItem="02G-wS-fjU" firstAttribute="trailing" secondItem="Ubz-ls-b2x" secondAttribute="trailing" constant="31" id="xSk-Pw-pcO"/>
+                            <constraint firstItem="02G-wS-fjU" firstAttribute="trailing" secondItem="lJ3-eb-lst" secondAttribute="trailing" constant="10" id="z6D-dC-tK6"/>
+                            <constraint firstItem="YBk-s5-Lfr" firstAttribute="leading" secondItem="02G-wS-fjU" secondAttribute="leading" constant="20" id="zya-xk-q2J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="02G-wS-fjU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info." image="info.circle" catalog="system" id="GRT-cZ-ksd"/>
@@ -548,28 +540,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5TV-wS-hVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1027.5362318840582" y="743.30357142857133"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YbG-b5-n1w">
-            <objects>
-                <viewController id="k8p-in-Qff" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Sqk-Za-PPR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="0Yq-13-qLV">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="bIi-H1-ZCh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c2w-8W-Pz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1991.3043478260872" y="-1286.3839285714284"/>
         </scene>
     </scenes>
     <resources>

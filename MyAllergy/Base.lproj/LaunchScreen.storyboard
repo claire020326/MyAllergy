@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <development version="9000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,20 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-sx-616">
-                                <rect key="frame" x="70" y="52" width="274" height="476"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-sx-616" userLabel="Image View">
+                                <rect key="frame" x="32" y="54" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Wm4-gQ-BXV"/>
+                                    <constraint firstAttribute="width" constant="350" id="YU3-0r-prZ"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVI-V9-wHU">
-                                <rect key="frame" x="90.5" y="400" width="233.5" height="145"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAllergy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVI-V9-wHU" userLabel="MyAllergy Label">
+                                <rect key="frame" x="90.5" y="414" width="233.5" height="63.5"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
                                 <color key="textColor" red="0.3732037842" green="0.5447500944" blue="0.55686444040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-vN-Hzp">
-                                <rect key="frame" x="39" y="553" width="336" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="8zN-DM-9ZY"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Personal Allergy Diagnosing Aid*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-vN-Hzp" userLabel="Subtitle Label">
+                                <rect key="frame" x="42" y="553" width="330.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="21"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -38,16 +38,12 @@
                         <color key="backgroundColor" red="0.9628412127" green="0.90700799229999995" blue="0.85488480330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TVI-V9-wHU" firstAttribute="centerX" secondItem="mqm-sx-616" secondAttribute="centerX" id="0ce-MS-E9s"/>
-                            <constraint firstItem="Ndc-Fn-6Rk" firstAttribute="bottom" secondItem="mqm-sx-616" secondAttribute="bottom" constant="334" id="4cw-h8-Ozh"/>
-                            <constraint firstItem="mqm-sx-616" firstAttribute="top" secondItem="Ndc-Fn-6Rk" secondAttribute="top" constant="8" id="8z6-TC-2hp"/>
-                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="centerX" secondItem="TVI-V9-wHU" secondAttribute="centerX" id="Cz0-xG-8b3"/>
-                            <constraint firstItem="TVI-V9-wHU" firstAttribute="top" secondItem="Ndc-Fn-6Rk" secondAttribute="top" constant="356" id="MH1-jo-tpR"/>
-                            <constraint firstItem="mqm-sx-616" firstAttribute="leading" secondItem="Ndc-Fn-6Rk" secondAttribute="leading" constant="70" id="MoS-5x-GN6"/>
-                            <constraint firstItem="mqm-sx-616" firstAttribute="centerX" secondItem="D40-KT-1qC" secondAttribute="centerX" id="WpV-xw-Qw4"/>
-                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="top" secondItem="TVI-V9-wHU" secondAttribute="bottom" constant="8" id="cxh-5F-5d6"/>
-                            <constraint firstItem="Ndc-Fn-6Rk" firstAttribute="bottom" secondItem="fIr-vN-Hzp" secondAttribute="bottom" constant="282" id="iU6-7J-won"/>
-                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="leading" secondItem="Ndc-Fn-6Rk" secondAttribute="leading" constant="39" id="x2C-Vg-P29"/>
+                            <constraint firstItem="mqm-sx-616" firstAttribute="top" secondItem="Ndc-Fn-6Rk" secondAttribute="top" constant="10" id="6c9-a0-Efz"/>
+                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="top" secondItem="TVI-V9-wHU" secondAttribute="bottom" constant="75.5" id="BFz-d7-CJ9"/>
+                            <constraint firstItem="mqm-sx-616" firstAttribute="centerX" secondItem="D40-KT-1qC" secondAttribute="centerX" id="Caq-5h-TPw"/>
+                            <constraint firstItem="TVI-V9-wHU" firstAttribute="top" secondItem="mqm-sx-616" secondAttribute="bottom" constant="10" id="HXh-Jt-HEK"/>
+                            <constraint firstItem="TVI-V9-wHU" firstAttribute="centerX" secondItem="D40-KT-1qC" secondAttribute="centerX" id="Nlx-cO-RYQ"/>
+                            <constraint firstItem="fIr-vN-Hzp" firstAttribute="centerX" secondItem="D40-KT-1qC" secondAttribute="centerX" id="XYt-f8-mvC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ndc-Fn-6Rk"/>
                     </view>
